@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <include src="../sections/head.html"></include>
+</head>
+
+<body>
+
+    <main class="main">
+        <include src="../sections/mainMenu.html"></include>
+        
+        <div class="screen-view">
+
+            <include src="../sections/topPanel.html"></include>
+
+            <div class="content-wrapper">
+                
+                <div class="profile__purse">
+
+                    <div class="profile__purse-container info">
+                        <img 
+                            src="/assets/images/icons/financial-unit-ico.svg" 
+                            class="profile__purse-image" 
+                            alt="image"
+                        >
+                        <div class="profile__purse-info">
+                            <p class="profile__purse-summ">600 ₽</p>
+                            <p class="profile__purse-lastoperation">
+                                Последняя операция 26.03.2020 16:46:56
+                                <span>
+                                    - 5 679 ₽
+                                </span>
+                            </p>
+                            <a class="profile__purse-link" href="#">
+                                Все операции
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="profile__purse-container controls">
+                        <button class="profile__purse-btn btns__gray blue-text">Вывести деньги</button>
+                        <button class="profile__purse-btn btns__green">Пополнить кошелек</button>
+                    </div>
+
+                </div>
+
+                <div class="profile__alert orange">
+                    <svg class="mainMenu__container-ico">
+                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#ring-ico"></use>
+                    </svg>
+                    Необходимо подтвердить e-mail.  
+                </div>
+
+                <div class="profile__information"></div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <include src="../sections/scripts.html"></include>
+</body>
+
+</html>

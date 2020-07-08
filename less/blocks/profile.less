@@ -1,0 +1,126 @@
+.profile{
+    &__purse{
+        width: 100%;
+
+        background: #fff;
+        border-radius: 4px;
+
+        padding: 24px 20px;
+        box-sizing: border-box;
+
+        display: flex;
+        justify-content: space-between;
+
+        &-container{
+
+            display: flex;
+            align-items: center;
+
+            &.info{
+                min-width: 470px;
+            }
+
+            &.controls{
+                min-width: 400px;
+
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &-image{
+            float: left;
+            margin-right: 26px;
+        }
+
+        &-info{
+
+        }
+
+        &-btn{
+            padding: 0 20px;
+            height: 46px;
+            margin-right: 20px;
+        }
+
+        &-summ{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 26px;
+            line-height: 31px;
+
+            color: #252631;
+        }
+
+        &-lastoperation{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+
+            color: #98A9BC;
+
+            span{
+                color: #FE4D97;
+
+                margin-left: 25px;
+            }
+        }
+
+        &-link{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+
+            color: #4D7CFE;
+        }
+    }
+
+    &__alert{
+        width: 100%;
+        height: 64px;
+
+        display: flex;
+        align-items: center;
+
+        padding: 16px 18px;
+        box-sizing: border-box;
+
+        background:rgba(254,77,151,.08);
+
+        margin-top: 22px;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #FE4D97;
+
+        svg{
+            fill: #FE4D97;
+        }
+
+        &.orange{
+            background: rgba(255,171,43,.1);
+
+            color: #FFAB2B;
+
+            svg{
+                fill: #FFAB2B;
+            }
+        }
+    }
+
+    &__information{
+        width: 100%;
+        height: 500px;
+
+        background: #fff;
+        margin-top: 22px;
+        
+        border-radius: 4px;
+        overflow: hidden;
+    }
+}

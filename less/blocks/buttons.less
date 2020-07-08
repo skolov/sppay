@@ -1,0 +1,61 @@
+.btns{
+
+    &__blue, &__green, &__gray{
+
+        outline: none;
+        border: 0;
+        cursor: pointer;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &__blue, &__green{
+        border-radius: 4px;
+    }
+    
+    &__gray{
+        background: #F2F4F6;
+        border-radius: 4px;
+
+        &.blue-text{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #4285F4;
+        }
+    }
+
+    &__green{
+        color: #FFFFFF;
+        background: #6DD230;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__blue{
+
+        color: #fff;
+        background: #4D7CFE;
+
+        font-style: normal;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+
+    }
+}

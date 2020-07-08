@@ -39,6 +39,7 @@ gulp.task("serve", function(done) {
     server.init({
         server: "../build/",
         injectChanges: true,
+        port: 9999,
         open: false
     });
 
