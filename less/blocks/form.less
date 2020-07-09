@@ -1,6 +1,17 @@
 .form{
 
-    &__holder, &__holder--isolated{      
+    &__holder, &__holder--isolated{
+
+        &-part{
+
+        }
+
+        &.flex{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        } 
+
     }
 
     &__holder--isolated{
@@ -23,6 +34,25 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 1.5;
+
+        &.disabled{
+            background: #F8FAFB;
+            border: 1px solid #E8ECEF;
+
+            color: #98A9BC;
+        }
+
+        &.wrong{
+            background: #FFEEF5;
+            border: 1px solid #FE4D97;
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+
+            color: #252631;
+        }
 
     }
 

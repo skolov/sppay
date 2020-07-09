@@ -21,7 +21,8 @@ fieldset legend {
   color: #252631;
 }
 p,
-ul {
+ul,
+h1 {
   margin: 0;
   padding: 0;
 }
@@ -39,16 +40,34 @@ a {
 }
 .screen-view {
   width: calc(100% - 243px);
-  height: 2000px;
+  min-height: 100vh;
   float: right;
   position: relative;
 }
 .content-wrapper {
   width: 100%;
-  height: 100%;
   position: absolute;
-  padding: 84px 30px 0;
+  padding: 84px 30px 62px;
   box-sizing: border-box;
+}
+.content-wrapper .copyright {
+  width: 100%;
+  height: 62px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.65;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #98A9BC;
 }
 .btns__blue,
 .btns__green,
@@ -99,6 +118,12 @@ a {
   line-height: 14px;
   text-transform: uppercase;
 }
+.form__holder.flex,
+.form__holder--isolated.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .form__holder--isolated {
   margin: 30px 0 25px;
 }
@@ -114,6 +139,20 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
+}
+.form__input.disabled {
+  background: #F8FAFB;
+  border: 1px solid #E8ECEF;
+  color: #98A9BC;
+}
+.form__input.wrong {
+  background: #FFEEF5;
+  border: 1px solid #FE4D97;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #252631;
 }
 .form__label {
   width: 100%;
@@ -491,9 +530,142 @@ a {
 }
 .profile__information {
   width: 100%;
-  height: 500px;
   background: #fff;
-  margin-top: 22px;
+  margin: 22px 0;
+  position: relative;
   border-radius: 4px;
   overflow: hidden;
+  box-sizing: border-box;
+}
+.profile__information-tabs {
+  width: 292px;
+  height: 100%;
+  float: left;
+  position: absolute;
+  border-right: 1px solid #F2F4F6;
+  box-sizing: border-box;
+}
+.profile__information-view {
+  width: calc(100% - 293px);
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30px 35px;
+  float: right;
+}
+.profile__information-onetab {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid #F2F4F6;
+}
+.profile__information-onetab:hover {
+  background: #F8FAFB;
+}
+.profile__information-onetab.active {
+  background: #F8FAFB;
+  position: relative;
+}
+.profile__information-onetab.active::after {
+  content: '';
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #4D7CFE;
+}
+.profile__information-onetab.active p.profile__information-paragraph {
+  color: #4D7CFE;
+}
+.profile__information-onetab.active p.profile__information-paragraph.gray {
+  color: #98A9BC;
+}
+.profile__information-onetab.active svg {
+  fill: #4D7CFE;
+}
+.profile__information-paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #252631;
+}
+.profile__information-paragraph.gray {
+  font-size: 12px;
+  line-height: 18px;
+  color: #98A9BC;
+}
+.profile__information-tabico {
+  width: 18px;
+  height: 18px;
+  margin: 18px 24px;
+  fill: #98A9BC;
+}
+.profile__information-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: #252631;
+}
+.profile__information-unit {
+  width: 380px;
+  margin-top: 6px;
+  margin-right: 20px;
+}
+.profile__information-input {
+  padding: 15px 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #252631;
+}
+.profile__information-label {
+  font-size: 14px;
+  line-height: 17px;
+  margin: 13px 0;
+  color: #252631;
+}
+.profile__information-savebtn {
+  height: 46px;
+  width: 150px;
+  margin-top: 50px;
+}
+.profile__information-alert {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 46px;
+  color: #FE4D97;
+}
+.profile__information-sendcode {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #4D7CFE;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.profile__information-turbid {
+  margin-top: 46px;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #98A9BC;
+}
+.profile-settings {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
 }

@@ -127,7 +127,123 @@
                     Необходимо подтвердить e-mail.  
                 </div>
 
-                <div class="profile__information"></div>
+                <div class="profile__information">
+
+                    <div class="profile__information-tabs">
+
+                        <div class="profile__information-onetab active" data-tabname="main">
+                            <svg class="profile__information-tabico">
+                                <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#user-profile-tab-ico"></use>
+                            </svg>
+                            <div class="profile__information-text">
+                                <p class="profile__information-paragraph">Основная информация</p>
+                                <p class="profile__information-paragraph gray">Телефон, e-mail</p>
+                            </div>
+                        </div>
+
+                        <div class="profile__information-onetab" data-tabname="settings">
+                            <svg class="profile__information-tabico">
+                                <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#settings-profile-tab-ico"></use>
+                            </svg>
+                            <div class="profile__information-text">
+                                <p class="profile__information-paragraph">Настройки</p>
+                                <p class="profile__information-paragraph gray">Соцсети, никнеймы</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--
+
+                    <div class="profile__information-view" data-tabname="">
+
+                        <h1 class="profile__information-title">Основная информаци</h1>
+
+                        <div class="profile__holder">
+                            <div class="form__holder flex">
+                                <div class="form__holder-part profile__information-unit">
+                                    <p class="form__label profile__information-label">Имя</p>
+                                    <input class="form__input profile__information-input" type="text">
+                                </div>
+                            </div>
+
+                            <div class="form__holder flex">
+                                <div class="form__holder-part profile__information-unit">
+                                    <p class="form__label profile__information-label">Город</p>
+                                    <input class="form__input profile__information-input" type="text">
+                                </div>
+                            </div>
+
+                            <div class="form__holder flex">
+                                <div class="form__holder-part profile__information-unit">
+                                    <p class="form__label profile__information-label">Телефон</p>
+                                    <input class="form__input disabled" type="text" value="+792267465578" disabled>
+                                </div>
+                            </div>
+
+                            <div class="form__holder flex">
+                                <div class="form__holder-part profile__information-unit">
+                                    <p class="form__label profile__information-label">E-mail (для уведомлений)</p>
+                                    <input class="form__input wrong" type="email" value="letawiwuj-0994@yopmail.com">
+                                </div>
+
+                                <div class="form__holder-part profile__information-unit">
+                                    <p class="profile__information-alert">Необходимо подтвердить E-mail.</p>
+                                    <button class="profile__information-sendcode">Повторная отправка письма</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btns__blue profile__information-savebtn">Сохранить</button>
+
+                    </div>
+
+                    -->
+
+                    <div class="profile__information-view" data-tabname="">
+
+                        <h1 class="profile__information-title">Настройки</h1>
+
+                        <div class="profile__holder">
+
+                            <div class="form__holder flex">
+                                <div class="form__holder-part profile__information-unit">
+                                    <p class="form__label profile__information-label">ИНН организатора</p>
+                                    <input class="form__input profile__information-input" type="text" value="564748596789">
+                                </div>
+
+                                <div class="form__holder-part profile__information-unit">
+                                    <p class="form__label profile__information-turbid">
+                                        ИНН нужен для вывода денег из системы и вывод возможен только для самозанятых и ИП
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="profile__settings">
+                                <h1 class="profile__settings-title">
+                                    Никнеймы на площадках
+                                </h1>
+
+                                <div class="form__holder-part profile__information-unit">
+                                    <p class="form__label profile__information-label">ИНН организатора</p>
+                                    <select name="" id="">
+                                        <option selected="" value="">Сайт не выбран</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                    <input class="form__input profile__information-input" type="text" value="564748596789">
+                                </div>                                
+                            </div>
+
+                        </div>
+
+                        <button class="btns__blue profile__information-savebtn">Сохранить</button>
+
+                    </div>
+
+                </div>
+
+                <div class="copyright">© 2020 SPPAY</div>
 
             </div>
 
@@ -135,7 +251,8 @@
 
     </main>
 
-    
+    <script src="path/to/jquery.js"></script> 
+<script src="path/to/jquery.nice-select.js"></script>
 </body>
 
 </html>

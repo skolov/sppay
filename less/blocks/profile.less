@@ -115,12 +115,204 @@
 
     &__information{
         width: 100%;
-        height: 500px;
 
         background: #fff;
-        margin-top: 22px;
+        margin: 22px 0;
         
+
+        position: relative;
         border-radius: 4px;
         overflow: hidden;
+        box-sizing: border-box;
+
+        &-tabs{
+            width: 292px;
+            height: 100%;
+            
+            float: left;
+            position: absolute;
+
+            border-right: 1px solid #F2F4F6;
+
+            box-sizing: border-box;
+        }
+
+        &-view{
+            width: calc(100% - 293px);
+            height: 100%;
+
+            box-sizing: border-box;
+
+            padding: 30px 35px;
+
+            float: right;
+        }
+
+        &-onetab{
+            width: 100%;
+            height: 70px;
+
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            border-bottom: 1px solid #F2F4F6;
+
+            &:hover{
+                background: #F8FAFB;
+            }
+
+            &.active{
+                background: #F8FAFB;
+
+                position: relative;
+
+                &::after{
+                    content: '';
+
+                    width: 2px;
+                    height: 100%;
+
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+
+                    background: #4D7CFE;
+                }
+
+                p.profile__information-paragraph{
+                    color: #4D7CFE;
+                }
+                p.profile__information-paragraph.gray{
+                    color: #98A9BC;
+                }
+                
+                svg{
+                    fill: #4D7CFE;
+                }
+            }
+        }
+
+        &-text{
+
+        }
+
+        &-paragraph{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #252631;
+
+            &.gray{
+                font-size: 12px;
+                line-height: 18px;
+
+                color: #98A9BC;
+            }
+        }
+
+        &-tabico{
+            width: 18px;
+            height: 18px;
+
+            margin: 18px 24px;
+
+            fill: #98A9BC;
+
+        }
+
+        &-title{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            
+            margin-bottom: 10px;
+
+            color: #252631;
+        }
+
+        &-unit{
+            width: 380px;
+            margin-top: 6px;
+            margin-right: 20px;
+        }
+
+        &-input{
+            padding: 15px 16px;
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.5;
+            
+            color: #252631;
+        }
+
+        &-label{
+            font-size: 14px;
+            line-height: 17px;
+            margin: 13px 0;
+
+            color: #252631;
+        }
+
+        &-savebtn{
+            height: 46px;
+            width: 150px;
+
+            margin-top: 50px;
+        }
+
+        &-alert{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 21px;
+
+            margin-top: 46px;
+
+            color: #FE4D97;
+        }
+
+        &-sendcode{
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 14px;
+            
+            color: #4D7CFE;
+
+            background: none;
+            border: 0;
+
+            cursor: pointer;
+
+        }
+
+        &-turbid{
+            margin-top: 46px;
+            margin-bottom: 0;
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 150%;
+
+            color: #98A9BC;
+        }
+        
+    }
+
+    &-settings{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: #000000;
     }
 }
