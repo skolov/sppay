@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <include src="../sections/head.html"></include>
+</head>
+
+<body>
+
+    <main class="main">
+        <include src="../sections/mainMenu.html"></include>
+        
+        <div class="screen-view">
+
+            <include src="../sections/topPanel.html"></include>
+
+            <div class="content-wrapper">
+
+
+                <div class="copyright">© 2020 SPPAY</div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <div class="modal">
+
+        <!--
+
+        <div class="modal__window">
+
+            <div class="modal__header">
+                Подтвердить участие в закупке
+                <button class="modal__close">
+                    <svg class="modal__close-ico">
+                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal__body">
+                <p class="modal__body-title">Чистящие средства для дома</p>
+                <p class="modal__body-text">
+                    Основная продукция - парники "Подснежник" разных размеров.
+                    Парник запатентован, производится в России.
+                    Кроме парников в ассортименте много всего, что в хозяйстве пригодится.
+                    Капельный полив, формы для садовых дорожек, укрывной материал и т.п.
+                </p>
+                <p class="modal__body-text small-margin">Поставщик: БашАгроПласт</p>
+                <p class="modal__body-text small-margin">Закупка: <a href="">https://ogromno.ru/product/2068</a></p>
+                <p class="modal__body-text small-margin">Сайт: ogromno.com</p>
+                <p class="modal__body-text small-margin">Организатор: kate180219</p>
+            </div>
+
+            <div class="modal__footer">
+                <button class="btns__gray gray-text upper-text modal__footer-button">Отказаться</button>
+                <button class="btns__blue upper-text modal__footer-button">Подтвердить</button>
+            </div>
+
+        </div>
+
+        -->
+        <!--
+
+        <div class="modal__window">
+
+            <div class="modal__header">
+                Вы хотите отказаться от участия в закупке
+                <button class="modal__close">
+                    <svg class="modal__close-ico">
+                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal__body">
+                <p class="modal__body-title">Чистящие средства для дома</p>
+                <p class="modal__body-text">
+                    Основная продукция - парники "Подснежник" разных размеров.
+                    Парник запатентован, производится в России.
+                    Кроме парников в ассортименте много всего, что в хозяйстве пригодится.
+                    Капельный полив, формы для садовых дорожек, укрывной материал и т.п.
+                </p>
+                <p class="modal__body-text small-margin">Поставщик: БашАгроПласт</p>
+                <p class="modal__body-text small-margin">Закупка: <a href="">https://ogromno.ru/product/2068</a></p>
+                <p class="modal__body-text small-margin">Сайт: ogromno.com</p>
+                <p class="modal__body-text small-margin">Организатор: kate180219</p>
+            </div>
+
+            <div class="modal__footer">
+                <button class="btns__gray gray-text upper-text modal__footer-button">вернуться к списку</button>
+                <button class="btns__blue upper-text modal__footer-button">Отказаться от участия</button>
+            </div>
+
+        </div>
+
+        -->
+
+        <!--
+      
+
+        <div class="modal__window">
+
+            <div class="modal__header">
+                Подтвердить ник
+                <button class="modal__close">
+                    <svg class="modal__close-ico">
+                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal__body">
+
+                <div class="modal__body-holder wider-margin flex">
+                    <div class="modal__body-holderpart">
+                        <p class="form__label modal__body-label">Площадка</p>
+                        <input class="form__input disabled" type="text" value="zakupis-ekb.ru">
+                    </div>
+                    <div class="modal__body-holderpart">
+                        <p class="form__label modal__body-label">Ваш никнейм на площадке</p>
+                        <input class="form__input" class="" type="text" value="kate180219">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal__footer">
+                <button class="btns__gray gray-text upper-text modal__footer-button">вернуться к списку</button>
+                <button class="btns__blue upper-text modal__footer-button">Отказаться от участия</button>
+            </div>
+
+        </div>
+
+        -->
+
+        <!--   
+
+        <div class="modal__window">
+
+            <div class="modal__header">
+                Оплата закупки
+                <button class="modal__close">
+                    <svg class="modal__close-ico">
+                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal__body">
+
+                <div class="modal__body-holder">
+                    <p class="form__label modal__body-label">Закупка</p>
+                    <input class="form__input disabled" type="text" value="Чистящие средства для дома">
+                </div>
+
+                <div class="modal__body-holder wider-margin flex">
+                    <div class="modal__body-holderpart">
+                        <p class="form__label modal__body-label">К оплате по заказу</p>
+                        <input class="form__input" type="text" value="1 400 ">
+                        <span class="modal__body-symbol">₽</span>
+                    </div>
+                    <div class="modal__body-holderpart">
+                        <p class="form__label modal__body-text margin-for">Организационный сбор 24%</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal__footer flex-start">
+                <button class="btns__blue upper-text modal__footer-button min-width-pay">Отказаться от участия</button>
+                <p class="modal__footer-text have-margin-left">С учетом ОргПроцента 336 р</p>
+            </div>
+
+        </div>
+
+        -->
+
+        <!--     
+
+        <div class="modal__window">
+
+            <div class="modal__header">
+                Оплата закупки
+                <button class="modal__close">
+                    <svg class="modal__close-ico">
+                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal__body">
+
+                <div class="modal__body-holder floating">
+                    <p class="form__label modal__body-label">Площадка закупки</p>
+                    <select name="" id="">
+                        <option value="">ogromno.com</option>
+                        <option value="">ogromno.com</option>
+                        <option value="">ogromno.com</option>
+                        <option value="">ogromno.com</option>
+                    </select>
+                </div>
+
+                <div class="modal__body-holder wider-margin flex">
+                    <div class="modal__body-holderpart">
+                        <p class="form__label modal__body-label">Процент площадки</p>
+                        <input class="form__input disabled modal__body-input" type="text" value="5%">
+                    </div>
+                    <div class="modal__body-holderpart">
+                        <p class="form__label modal__body-label">Процент организатора</p>
+                        <input class="form__input modal__body-input" class="" type="text" value="15%">
+                    </div>
+                </div>
+
+                <div class="modal__body-holder wider-margin">
+                    <p class="form__label modal__body-label">Процент площадки</p>
+                    <input class="form__input modal__body-input" type="text" value="Экосредство Home для уборки">
+                </div>
+
+                <div class="modal__body-holder wider-margin">
+                    <p class="form__label modal__body-label">Описание</p>
+                    <textarea class="modal__body-textarea form__textarea" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+
+            </div>
+
+            <div class="modal__footer flex-start">
+                <button class="btns__blue upper-text modal__footer-button min-width-pay">ОПЛАТИТЬ 1 736 ₽</button>
+                <div class="modal__footer-text have-margin-left">С учетом ОргПроцента 336 р</div>
+            </div>
+
+        </div>
+
+        -->  
+
+        <!--
+
+        <div class="modal__window">
+
+            <div class="modal__header">
+                Возврат оплаты
+                <button class="modal__close">
+                    <svg class="modal__close-ico">
+                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal__body">
+
+                <div class="modal__body-holder floating">
+                    <p class="form__label modal__body-label">Пользователь</p>
+                    <input class="form__input disabled modal__body-input" type="text" value="Сидоров Игорь, Cabernet">
+                </div>
+
+                <div class="modal__body-holder wider-margin flex">
+                    <div class="modal__body-holderpart">
+                        <p class="form__label modal__body-label">Оплачено пользователем</p>
+                        <input class="form__input disabled modal__body-input" type="text" value="1300">
+                        <span class="modal__body-symbol disabled">₽</span>
+                    </div>
+                    <div class="modal__body-holderpart">
+                        <p class="form__label modal__body-label">Собранная сумма</p>
+                        <input class="form__input disabled modal__body-input" class="" type="text" value="800">
+                        <span class="modal__body-symbol disabled">₽</span>
+                    </div>
+                </div>
+
+                <div class="modal__body-holder wider-margin flex">
+                    <div class="modal__body-holderpart max-part-input-width">
+                        <p class="form__label modal__body-label">Сумма возврата</p>
+                        <input class="form__input modal__body-input" type="text" value="500">
+                        <span class="modal__body-symbol">₽</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal__footer flex">
+                <button class="btns__gray gray-text upper-text modal__footer-button">отмена</button>
+                <button class="btns__blue upper-text modal__footer-button min-width-pay">Вернуть оплату</button>
+            </div>
+
+        </div>
+        
+        -->
+
+
+        <!--
+
+        
+        <div class="modal__window">
+
+            <div class="modal__header">
+                Отгрузить товар
+                <button class="modal__close">
+                    <svg class="modal__close-ico">
+                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal__body">
+
+                <div class="modal__body-holder floating">
+                    <p class="form__label modal__body-label">Площадка</p>
+                    <input class="form__input disabled modal__body-input" type="text" value="ogromno.ru ">
+                </div>
+
+                <div class="modal__body-holder floating">
+                    <p class="form__label modal__body-label">Пользователь</p>
+                    <input class="form__input disabled modal__body-input" type="text" value="Сидоров Игорь,  Cabernet">
+                </div>
+
+                <div class="modal__body-holder wider-margin flex">
+                    <div class="modal__body-holderpart">
+                        <p class="form__label modal__body-label">Сумма оплаты</p>
+                        <input class="form__input disabled modal__body-input" type="text" value="1300">
+                        <span class="modal__body-symbol disabled">₽</span>
+                    </div>
+                    <div class="modal__body-holderpart">
+                        <p class="form__label modal__body-label">Выдано товара</p>
+                        <input class="form__input disabled modal__body-input" class="" type="text" value="700">
+                        <span class="modal__body-symbol disabled">₽</span>
+                    </div>
+                </div>
+
+                <div class="modal__body-holder wider-margin flex">
+                    <div class="modal__body-holderpart max-part-input-width">
+                        <p class="form__label modal__body-label">Выдать товар на сумму</p>
+                        <input class="form__input modal__body-input" type="text" value="500">
+                        <span class="modal__body-symbol">₽</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal__footer flex">
+                <button class="btns__gray gray-text upper-text modal__footer-button">отмена</button>
+                <button class="btns__blue upper-text modal__footer-button min-width-pay">Вернуть оплату</button>
+            </div>
+
+        </div>
+
+        -->
+
+
+        <div class="modal__window">
+
+            <div class="modal__header">
+                Создание закупки
+                <button class="modal__close">
+                    <svg class="modal__close-ico">
+                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal__body">
+
+                <div class="modal__body-holder floating">
+                    <p class="form__label modal__body-label">Поставщик</p>
+                    <input class="form__input disabled modal__body-input" type="text" value="РИФЕЙ">
+                </div>
+
+                <div class="modal__body-holder wider-margin flex">
+                    <div class="modal__body-holderpart">
+                        <p class="form__label modal__body-label">Минимальная сумма</p>
+                        <input class="form__input modal__body-input" type="text" value="40 000">
+                        <span class="modal__body-symbol">₽</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal__footer flex">
+                <button class="btns__gray gray-text upper-text modal__footer-button">отмена</button>
+                <button class="btns__blue upper-text modal__footer-button min-width-pay">Создать закупку</button>
+            </div>
+
+        </div>
+
+
+     
+
+        
+
+
+    </div>
+
+    <include src="../sections/scripts.html"></include>
+</body>
+
+</html>

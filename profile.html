@@ -46,10 +46,12 @@
                 </div>
 
                 <div class="profile__alert orange">
-                    <svg class="mainMenu__container-ico">
-                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#ring-ico"></use>
-                    </svg>
-                    Необходимо подтвердить e-mail.  
+                    <div class="profile__alert-controllers">
+                        <svg class="mainMenu__container-ico">
+                            <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#ring-ico"></use>
+                        </svg>
+                        Необходимо подтвердить e-mail.  
+                    </div>
                 </div>
 
                 <div class="profile__information">
@@ -149,15 +151,114 @@
                                     Никнеймы на площадках
                                 </h1>
 
-                                <div class="form__holder-part profile__information-unit">
-                                    <p class="form__label profile__information-label">ИНН организатора</p>
-                                    <select name="" id="">
-                                        <option selected value="">Сайт не выбран</option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                    </select>
-                                    <input class="form__input profile__information-input" type="text" value="564748596789">
-                                </div>                                
+                                <div class="form__holder flex">
+                                    <div class="form__holder-part profile__information-unit">
+                                        <p class="form__label profile__information-label">Площадка</p>
+                                        <select name="" id="">
+                                            <option selected value="">Сайт не выбран</option>
+                                            <option value="">Сайт не выбранСайт не выбран</option>
+                                        </select>
+                                    </div> 
+    
+                                    <div class="form__holder-part profile__information-unit">
+                                        <p class="form__label profile__information-label">Ваш никнейм на площадке</p>
+                                        <div class="form__holder-part flex">
+                                            <input class="form__input profile__information-input" type="text" value="kate180219">
+                                            <button class="btns__add-textual profile__information-delete">
+                                                <svg class="btns__add-textual-ico">
+                                                    <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#trash-ico"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <button class="btns__add-textual profile__information-addbtn">
+                                    <svg class="btns__add-textual-ico">
+                                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#blue-plus-ico"></use>
+                                    </svg>
+                                    добавить никнейм
+                                </button>
+                            </div>
+
+                            <div class="profile__settings">
+                                <h1 class="profile__settings-title">
+                                    Соцсети
+                                </h1>
+                                <div class="profile__social">
+                                    
+                                    <div class="profile__social-item">
+
+                                        <div class="profile__social-ico-holder">
+                                            <svg class="profile__social-ico">
+                                                <use x="0" y="10" xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#social-vk-ico"></use>
+                                            </svg>
+                                            <p class="profile__social-text">vk.com</p>
+                                        </div>
+
+                                        <div class="profile__social-controllers">
+                                            <p class="profile__social-login">Пестова Елена</p>
+                                            <button class="btns__add-textual normal-text">
+                                                Отключить
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="profile__social-item">
+
+                                        <div class="profile__social-ico-holder">
+                                            <svg class="profile__social-ico">
+                                                <use x="6" y="6" xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#social-google-ico"></use>
+                                            </svg>
+                                            <p class="profile__social-text">google.com</p>
+                                        </div>
+
+                                        <div class="profile__social-controllers">
+                                            <p class="profile__social-login">e_pestova@gmail.com</p>
+                                            <button class="btns__add-textual normal-text">
+                                                Отключить
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="profile__social-item">
+
+                                        <div class="profile__social-ico-holder">
+                                            <svg class="profile__social-ico">
+                                                <use x="8" y="6" xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#social-facebook-ico"></use>
+                                            </svg>
+                                            <p class="profile__social-text">facebook.com</p>
+                                        </div>
+
+                                        <div class="profile__social-controllers">
+                                            <button class="btns__add-textual normal-text">
+                                                Аторизоваться
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="profile__social-item">
+
+                                        <div class="profile__social-ico-holder">
+                                            <svg class="profile__social-ico">
+                                                <use x="8" y="2" xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#social-ok-ico"></use>
+                                            </svg>
+                                            <p class="profile__social-text">ok.ru</p>
+                                        </div>
+
+                                        <div class="profile__social-controllers">
+                                            <button class="btns__add-textual normal-text">
+                                                Аторизоваться
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
                             </div>
 
                         </div>

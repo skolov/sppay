@@ -1,6 +1,6 @@
 .btns{
 
-    &__blue, &__green, &__gray{
+    &__blue, &__green, &__gray, &__add-textual{
 
         outline: none;
         border: 0;
@@ -18,18 +18,29 @@
     &__gray{
         background: #F2F4F6;
         border-radius: 4px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+
 
         &.blue-text{
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 17px;
 
             text-align: center;
             text-transform: uppercase;
 
             color: #4285F4;
         }
+
+        &.upper-text{
+            text-transform: uppercase;
+        }
+
+        &.gray-text{
+            color: #778CA2;
+        }
+
+
     }
 
     &__green{
@@ -57,5 +68,36 @@
         line-height: 14px;
         text-transform: uppercase;
 
+    }
+
+    &__add-textual{
+        background: none;
+        color: #4D7CFE;
+
+        height: 20px;
+
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        /* identical to box height, or 117% */
+
+        text-transform: uppercase;
+
+        color: #4D7CFE;
+
+        &.normal-text{
+            text-transform: none;
+        }
+
+        &-ico{
+            width: 18px;
+            height: 18px;
+        }
     }
 }

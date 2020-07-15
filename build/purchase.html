@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, viewport-fit=cover">
+<title>Sppay</title>
+<link rel="stylesheet" href="css/style.min.css">
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css">
+</head>
+
+<body>
+
+    <main class="main">
+
+        <div class="mainMenu">
+
+    <div class="mainMenu__logo">
+        <img class="" src="/assets/images/icons/sppay-logo.svg" alt="logo">
+    </div>
+
+    <ul class="mainMenu__container">
+        
+        <li class="mainMenu__container-item">
+            <a class="mainMenu__container-link" href="">
+                <svg class="mainMenu__container-ico">
+                    <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#menu-item-purchase"></use>
+                </svg>
+                закупки
+            </a>
+        </li>
+
+        <li class="mainMenu__container-item">
+            <a class="mainMenu__container-link" href="">
+                <svg class="mainMenu__container-ico">
+                    <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#menu-item-provider"></use>
+                </svg>
+                поставщики
+            </a>
+        </li>
+
+        <li class="mainMenu__container-item">
+            <a class="mainMenu__container-link" href="">
+                <svg class="mainMenu__container-ico">
+                    <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#menu-item-purse"></use>
+                </svg>
+                Кошелек
+            </a>
+        </li>
+
+        <li class="mainMenu__container-item">
+            <a class="mainMenu__container-link active" href="">
+                <svg class="mainMenu__container-ico">
+                    <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#menu-item-user"></use>
+                </svg>
+                Профиль
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+        <div class="screen-view">
+
+            <div class="topPanel">
+
+    <div class="topPanel__namepage">
+        ООО "ХОЗЛИДЕР"
+        <!--
+            Профиль 
+            Список закупок
+        -->
+    </div>
+
+    <div class="topPanel__profile">
+
+        <div class="topPanel__profile-container balance">
+            <p class="topPanel__profile-balance">600 ₽</p>
+            <a class="topPanel__profile-link" href="#">Пополнить</a>
+        </div>
+
+        <div class="topPanel__profile-container">
+            <p class="topPanel__profile-balance">10 000 ₽</p>
+            <p class="topPanel__profile-title">Дефицит ЛС</p>
+        </div>
+
+        <div class="topPanel__profile-container user">
+            <p class="topPanel__profile-name">
+                Пестова Елена
+            </p>
+            <div class="topPanel__profile-avatar">
+                <img src="/assets/images/icons/default-avatar-ico.svg" class="" alt="avatar">
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+            <div class="content-wrapper">
+
+                <div class="purchase">
+
+                    <div class="purchase__controllers white">
+                        <button class="btns__green purchase__controllers-btn">Оплатить поставщику</button>
+                        <button class="btns__add-textual">
+                            <svg class="btns__add-textual-ico">
+                                <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#blue-plus-ico"></use>
+                            </svg>
+                            редактировать закупку
+                        </button>
+                    </div>
+
+                    <div class="profile__alert orange">
+                        <div class="profile__alert-controllers">
+                            <svg class="mainMenu__container-ico">
+                                <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#ring-ico"></use>
+                            </svg>
+                            Необходимо подтвердить e-mail.
+                        </div>
+
+                        <div class="profile__alert-controllers">
+                            <svg class="mainMenu__container-ico profile__alert-ico">
+                                <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#alert-money-ico"></use>
+                            </svg>
+                            40 000 ₽
+                        </div>
+                    </div>
+
+                    <div class="purchase__controllers">
+                        <button class="btns__add-textual">
+                            <svg class="btns__add-textual-ico">
+                                <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#blue-plus-ico"></use>
+                            </svg>
+                            добавить площадку
+                        </button>
+                    </div>
+
+
+
+
+
+                    <div class="purchase__platform">
+
+                        <div class="purchase__acquisition gray flex">
+                            <div class="purchase__acquisition-infoboard other-padding">
+                                <div class="purchase__acquisition-part width-small">
+                                    <button class="btns__add-textual">
+                                        <svg class="btns__add-textual-ico">
+                                            <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#pencil-edit-ico"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                
+                                <div class="purchase__acquisition-part width-platform-name">
+                                    <p class="purchase__acquisition-name no-margin">ogromno.ru, Екатеринбург</p>
+                                    <p class="purchase__acquisition-text no-margin">
+                                        Организатор: Cabernet 
+                                    </p>
+                                    <button class="purchase__acquisition-hover-btn no-margin">
+                                        Описание
+                                    </button>
+                                    <div class="purchase__description">
+                                        <p class="purchase__description-title">Чистящие средства для дома</p>
+                                        <p class="purchase__description-text other-margin">Основная продукция - парники "Подснежник" разных размеров.
+                                            Парник запатентован, производится в России.
+                                            Кроме парников в ассортименте много всего, что в хозяйстве пригодится.
+                                            Капельный полив, формы для садовых дорожек, укрывной материал и т.п.
+                                        </p>
+                                        <p class="purchase__description-text">Поставщик: БашАгроПласт</p>
+                                        <p class="purchase__description-text">Закупка: <a href="#">https://ogromno.ru/product/2068</a></p>
+                                        <p class="purchase__description-text">Организационный процент: 19%</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Оплачено</p>
+                                        <p class="purchase__acquisition-text align-right">К оплате</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽ / 6 700 ₽</p>
+                                        <p class="purchase__acquisition-text red">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Выдано</p>
+                                        <p class="purchase__acquisition-text align-right">Долг организатора</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽</p>
+                                        <p class="purchase__acquisition-text black">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part width-more">
+                                    <button class="btns__add-textual purchase__acquisition-btn btn-dropdown collapsed">
+                                        <svg class="btns__add-textual-ico">
+                                            <use x="1" y="4" xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#drop-down-ico"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="purchase__acquisition flex">
+                            <div class="purchase__acquisition-infoboard other-padding">
+                                <div class="purchase__acquisition-part width-small">
+                                    <p class="purchase__acquisition-number">1</p>
+                                </div>
+                                
+                                <div class="purchase__acquisition-part width-platform-name">
+                                    <p class="purchase__acquisition-name no-margin smaller-font">pipka_ futures</p>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Оплачено</p>
+                                        <p class="purchase__acquisition-text align-right">К оплате</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽ / 6 700 ₽</p>
+                                        <p class="purchase__acquisition-text green">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Выдано</p>
+                                        <p class="purchase__acquisition-text align-right">Долг организатора</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽</p>
+                                        <p class="purchase__acquisition-text black">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part width-more">
+                                    <button class="btns__add-textual">
+                                        <svg class="btns__add-textual-ico">
+                                            <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#more-btn-ico"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="purchase__dropdown">
+                                        <ul class="purchase__dropdown-list">
+                                            <li class="purchase__dropdown-item">
+                                                <a class="purchase__dropdown-link" href="">
+                                                    <svg class="purchase__dropdown-ico">
+                                                        <use x="2" xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#dropdown-edit-ico"></use>
+                                                    </svg>
+                                                    редактировать
+                                                </a>
+                                            </li>
+                                            <li class="purchase__dropdown-item">
+                                                <a class="purchase__dropdown-link" href="">
+                                                    <svg class="purchase__dropdown-ico">
+                                                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#dropdown-copy-ico"></use>
+                                                    </svg>
+                                                    Скопировать ссылку
+                                                </a>
+                                            </li>
+                                            <li class="purchase__dropdown-item">
+                                                <a class="purchase__dropdown-link" href="">
+                                                    <svg class="purchase__dropdown-ico">
+                                                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#dropdown-send-ico"></use>
+                                                    </svg>
+                                                    Отправить ссылку
+                                                </a>
+                                            </li>
+                                            <li class="purchase__dropdown-item">
+                                                <a class="purchase__dropdown-link" href="">
+                                                    <svg class="purchase__dropdown-ico">
+                                                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#dropdown-payback-ico"></use>
+                                                    </svg>
+                                                    Вернуть оплату
+                                                </a>
+                                            </li>
+                                            <li class="purchase__dropdown-item">
+                                                <a class="purchase__dropdown-link" href="">
+                                                    <svg class="purchase__dropdown-ico">
+                                                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#dropdown-away-ico"></use>
+                                                    </svg>
+                                                    Отгрузить товар
+                                                </a>
+                                            </li>
+                                            <li class="purchase__dropdown-item">
+                                                <a class="purchase__dropdown-link" href="">
+                                                    <svg class="purchase__dropdown-ico">
+                                                        <use x="4" xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#dropdown-delete-ico"></use>
+                                                    </svg>
+                                                    Отозвать приглашение
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="purchase__acquisition flex">
+                            <div class="purchase__acquisition-infoboard other-padding">
+                                <div class="purchase__acquisition-part width-small">
+                                    <p class="purchase__acquisition-number">2</p>
+                                </div>
+                                
+                                <div class="purchase__acquisition-part width-platform-name">
+                                    <p class="purchase__acquisition-name no-margin smaller-font">pipka_ futures</p>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Оплачено</p>
+                                        <p class="purchase__acquisition-text align-right">К оплате</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽ / 6 700 ₽</p>
+                                        <p class="purchase__acquisition-text red">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Выдано</p>
+                                        <p class="purchase__acquisition-text align-right">Долг организатора</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽</p>
+                                        <p class="purchase__acquisition-text black">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part width-more">
+                                    <button class="btns__add-textual">
+                                        <svg class="btns__add-textual-ico">
+                                            <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#more-btn-ico"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="purchase__acquisition flex">
+                            <div class="purchase__acquisition-infoboard other-padding">
+                                <div class="purchase__acquisition-part width-small">
+                                    <p class="purchase__acquisition-number">3</p>
+                                </div>
+                                
+                                <div class="purchase__acquisition-part width-platform-name">
+                                    <p class="purchase__acquisition-name no-margin smaller-font">pipka_ futures</p>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Оплачено</p>
+                                        <p class="purchase__acquisition-text align-right">К оплате</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽ / 6 700 ₽</p>
+                                        <p class="purchase__acquisition-text red">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Выдано</p>
+                                        <p class="purchase__acquisition-text align-right">Долг организатора</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽</p>
+                                        <p class="purchase__acquisition-text black">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part width-more">
+                                    <button class="btns__add-textual">
+                                        <svg class="btns__add-textual-ico">
+                                            <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#more-btn-ico"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="purchase__acquisition flex">
+                            <div class="purchase__acquisition-infoboard">
+                                
+                                <div class="purchase__acquisition-part width-platform-name">
+                                    <button class="btns__add-textual">
+                                        <svg class="btns__add-textual-ico">
+                                            <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#blue-plus-ico"></use>
+                                        </svg>
+                                        Добавить пользователя
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="purchase__acquisition gray flex">
+                            <div class="purchase__acquisition-infoboard other-padding">
+                                <div class="purchase__acquisition-part width-small">
+                                    <button class="btns__add-textual">
+                                        <svg class="btns__add-textual-ico">
+                                            <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#pencil-edit-ico"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                
+                                <div class="purchase__acquisition-part width-platform-name">
+                                    <p class="purchase__acquisition-name no-margin">ogromno.ru, Екатеринбург</p>
+                                    <p class="purchase__acquisition-text no-margin">
+                                        Организатор: Cabernet 
+                                    </p>
+                                    <button class="purchase__acquisition-hover-btn no-margin">Описание</button>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Оплачено</p>
+                                        <p class="purchase__acquisition-text align-right">К оплате</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽ / 6 700 ₽</p>
+                                        <p class="purchase__acquisition-text red">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Выдано</p>
+                                        <p class="purchase__acquisition-text align-right">Долг организатора</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽</p>
+                                        <p class="purchase__acquisition-text black">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part width-more">
+                                    <button class="btns__add-textual purchase__acquisition-btn">
+                                        <svg class="btns__add-textual-ico">
+                                            <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#drop-down-ico"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="purchase__acquisition flex">
+                            <div class="purchase__acquisition-infoboard other-padding">
+                                <div class="purchase__acquisition-part width-small">
+                                    <p class="purchase__acquisition-number">1</p>
+                                </div>
+                                
+                                <div class="purchase__acquisition-part width-platform-name">
+                                    <p class="purchase__acquisition-name no-margin smaller-font">pipka_ futures</p>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Оплачено</p>
+                                        <p class="purchase__acquisition-text align-right">К оплате</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽ / 6 700 ₽</p>
+                                        <p class="purchase__acquisition-text green">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Выдано</p>
+                                        <p class="purchase__acquisition-text align-right">Долг организатора</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽</p>
+                                        <p class="purchase__acquisition-text black">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part width-more">
+                                    <button class="btns__add-textual">
+                                        <svg class="btns__add-textual-ico">
+                                            <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#more-btn-ico"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="purchase__acquisition flex">
+                            <div class="purchase__acquisition-infoboard other-padding">
+                                <div class="purchase__acquisition-part width-small">
+                                    <p class="purchase__acquisition-number">2</p>
+                                </div>
+                                
+                                <div class="purchase__acquisition-part width-platform-name">
+                                    <p class="purchase__acquisition-name no-margin smaller-font">pipka_ futures</p>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Оплачено</p>
+                                        <p class="purchase__acquisition-text align-right">К оплате</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽ / 6 700 ₽</p>
+                                        <p class="purchase__acquisition-text red">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Выдано</p>
+                                        <p class="purchase__acquisition-text align-right">Долг организатора</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽</p>
+                                        <p class="purchase__acquisition-text black">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part width-more">
+                                    <button class="btns__add-textual">
+                                        <svg class="btns__add-textual-ico">
+                                            <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#more-btn-ico"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="purchase__acquisition flex">
+                            <div class="purchase__acquisition-infoboard other-padding">
+                                <div class="purchase__acquisition-part width-small">
+                                    <p class="purchase__acquisition-number">3</p>
+                                </div>
+                                
+                                <div class="purchase__acquisition-part width-platform-name">
+                                    <p class="purchase__acquisition-name no-margin smaller-font">pipka_ futures</p>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Оплачено</p>
+                                        <p class="purchase__acquisition-text align-right">К оплате</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽ / 6 700 ₽</p>
+                                        <p class="purchase__acquisition-text red">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Выдано</p>
+                                        <p class="purchase__acquisition-text align-right">Долг организатора</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽</p>
+                                        <p class="purchase__acquisition-text black">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part width-more">
+                                    <button class="btns__add-textual">
+                                        <svg class="btns__add-textual-ico">
+                                            <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#more-btn-ico"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="purchase__acquisition flex">
+                            <div class="purchase__acquisition-infoboard">
+                                
+                                <div class="purchase__acquisition-part width-platform-name">
+                                    <button class="btns__add-textual">
+                                        <svg class="btns__add-textual-ico">
+                                            <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#blue-plus-ico"></use>
+                                        </svg>
+                                        Добавить пользователя
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+
+                    </div>                    
+
+
+
+                    
+
+                    <div class="purchase__controllers">
+                        <p class="purchase__controllers-text">
+                            Все закупки поставщика — 6
+                        </p>
+                    </div>
+
+                    <div class="purchase__content">
+
+
+
+                        <div class="purchase__acquisition">
+
+                            <p class="purchase__acquisition-name">Яркие фотошторы, тюль, КПБ</p>
+
+                            <div class="purchase__acquisition-infoboard">
+                                
+                                <div class="purchase__acquisition-part width-name">
+                                    <p class="purchase__acquisition-text">
+                                        Площадка: ogromno.com, Екатринбург
+                                    </p>
+                                    <p class="purchase__acquisition-text">
+                                        Организатор: Liliya333
+                                    </p>
+                                    <button class="purchase__acquisition-hover-btn">Описание</button>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Оплачено</p>
+                                        <p class="purchase__acquisition-text align-right">К оплате</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽ / 6 700 ₽</p>
+                                        <p class="purchase__acquisition-text red">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Выдано</p>
+                                        <p class="purchase__acquisition-text align-right">Долг организатора</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽</p>
+                                        <p class="purchase__acquisition-text black">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part width-more">
+                                    <button class="btns__add-textual">
+                                        <svg class="btns__add-textual-ico">
+                                            <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#more-btn-ico"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="purchase__acquisition">
+
+                            <p class="purchase__acquisition-name">Яркие фотошторы, тюль, КПБ</p>
+
+                            <div class="purchase__acquisition-infoboard">
+                                
+                                <div class="purchase__acquisition-part width-name">
+                                    <p class="purchase__acquisition-text">
+                                        Площадка: ogromno.com, Екатринбург
+                                    </p>
+                                    <p class="purchase__acquisition-text">
+                                        Организатор: Liliya333
+                                    </p>
+                                    <button class="purchase__acquisition-hover-btn">Описание</button>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Оплачено</p>
+                                        <p class="purchase__acquisition-text align-right">К оплате</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽ / 6 700 ₽</p>
+                                        <p class="purchase__acquisition-text green">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part flex width-purse">
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text align-right">Выдано</p>
+                                        <p class="purchase__acquisition-text align-right">Долг организатора</p>
+                                    </div>
+                                    <div class="purchase__acquisition-purse">
+                                        <p class="purchase__acquisition-text black">0 ₽</p>
+                                        <p class="purchase__acquisition-text black">6 700 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__acquisition-part width-more">
+                                    <button class="btns__add-textual">
+                                        <svg class="btns__add-textual-ico">
+                                            <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#more-btn-ico"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="copyright">© 2020 SPPAY</div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="/js/jquery.js"></script> 
+<script src="/js/jquery.nice-select.min.js"></script>
+<script src="/js/pagination.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+
+</html>

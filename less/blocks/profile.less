@@ -83,6 +83,7 @@
 
         display: flex;
         align-items: center;
+        justify-content: space-between;
 
         padding: 16px 18px;
         box-sizing: border-box;
@@ -111,6 +112,16 @@
                 fill: #FFAB2B;
             }
         }
+
+        &-controllers{
+            display: flex;
+            align-items: center;
+        }
+
+        &-ico{
+            margin-right: 5px;
+        }
+
     }
 
     &__information{
@@ -124,6 +135,16 @@
         border-radius: 4px;
         overflow: hidden;
         box-sizing: border-box;
+
+        &-delete{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 16px 15px;
+
+            fill: #778CA2;
+        }
 
         &-tabs{
             width: 292px;
@@ -304,15 +325,86 @@
 
             color: #98A9BC;
         }
+
+        &-addbtn{
+            margin-top: 16px;
+        }
         
     }
 
-    &-settings{
+    &__settings{
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
         line-height: 22px;
 
+        margin-top: 80px;
+
         color: #000000;
+
+        &-title{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+
+            color: #000000;
+        }
+    }
+
+    &__social{
+        width: 100%;
+  
+        &-item{
+            width: 100%;
+            height: 56px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            border-bottom: 1px solid #F2F4F6;
+        }
+
+        &-ico-holder{
+            height: 56px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-ico{
+            width: 30px;
+            height: 30px;
+        }
+
+        &-text{
+            margin-left: 10px;
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+
+            color: #778CA2;
+        }
+
+        &-controllers{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-login{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+
+            margin-right: 10px;
+
+            color: #252631;
+        }
     }
 }
