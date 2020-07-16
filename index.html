@@ -14,6 +14,7 @@
             <!--
 
             1.1 Регистрация
+           
 
             <div class="registration__window">
                 <form>
@@ -36,7 +37,7 @@
 
                         <div class="form__holder">
                             <p class="form__label">Телефон</p>
-                            <input class="form__input" name="phone" type="text" placeholder="+7" value="+7">
+                            <input class="form__input" name="phone" type="text" placeholder="+7 " value="+7 ">
                         </div>
 
                         <div class="form__holder">
@@ -80,7 +81,8 @@
                 </div>
             </div>
 
-            -->
+
+             -->
 
 
 
@@ -104,9 +106,10 @@
                             <p class="form__label">Код из СМС (4 цифры)</p>
                             <input class="form__input" name="code" type="text">
                             
-                            <button class="registration__form-textbtn">
+                            <button class="registration__form-textbtn" data-send-code>
                                 Отправить код еще раз
                             </button>
+                            <p class="registration__form-weak-text" data-send-counter hidden></p>
                         </div>
 
                         <div class="form__holder">
@@ -229,7 +232,7 @@
 
             <!--
 
-            
+            1.5 Восстановление пароля
 
             <div class="registration__window">
                 <form>

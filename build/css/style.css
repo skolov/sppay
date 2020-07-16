@@ -1,3 +1,331 @@
+.paginationjs {
+  line-height: 1.6;
+  font-family: "Marmelad", "Lucida Grande", "Arial", "Hiragino Sans GB", Georgia, sans-serif;
+  font-size: 14px;
+  box-sizing: initial;
+}
+.paginationjs:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.paginationjs .paginationjs-pages {
+  float: left;
+}
+.paginationjs .paginationjs-pages ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.paginationjs .paginationjs-pages li {
+  float: left;
+  border-right: none;
+  list-style: none;
+}
+.paginationjs .paginationjs-pages li > a {
+  min-width: 30px;
+  height: 28px;
+  line-height: 28px;
+  display: block;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
+.paginationjs .paginationjs-pages li.active {
+  border: none;
+}
+.paginationjs .paginationjs-pages li.active > a {
+  height: 30px;
+  line-height: 30px;
+  background: #4D7CFE;
+  color: #fff;
+  border-radius: 4px;
+}
+.paginationjs .paginationjs-pages li.disabled > a {
+  opacity: 0.3;
+}
+.paginationjs .paginationjs-pages li.disabled > a:hover {
+  background: none;
+}
+.paginationjs .paginationjs-pages li:first-child {
+  border-radius: 3px 0 0 3px;
+}
+.paginationjs .paginationjs-pages li:first-child > a {
+  border-radius: 3px 0 0 3px;
+  margin-right: 20px;
+}
+.paginationjs .paginationjs-pages li:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.paginationjs .paginationjs-pages li:last-child > a {
+  border-radius: 0 3px 3px 0;
+  margin-left: 20px;
+}
+.paginationjs .paginationjs-go-input {
+  float: left;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.paginationjs .paginationjs-go-input > input[type="text"] {
+  width: 30px;
+  height: 28px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  padding: 0;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: baseline;
+  outline: none;
+  box-shadow: none;
+  box-sizing: initial;
+}
+.paginationjs .paginationjs-go-button {
+  float: left;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.paginationjs .paginationjs-go-button > input[type="button"] {
+  min-width: 40px;
+  height: 30px;
+  line-height: 28px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  text-align: center;
+  padding: 0 8px;
+  font-size: 14px;
+  vertical-align: baseline;
+  outline: none;
+  box-shadow: none;
+  color: #333;
+  cursor: pointer;
+}
+.paginationjs .paginationjs-go-button > input[type="button"]:hover {
+  background-color: #f8f8f8;
+}
+.paginationjs .paginationjs-nav {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.paginationjs.paginationjs-small {
+  font-size: 12px;
+}
+.paginationjs.paginationjs-small .paginationjs-pages li > a {
+  min-width: 26px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  background: red;
+}
+.paginationjs.paginationjs-small .paginationjs-pages li.active > a {
+  height: 26px;
+  line-height: 26px;
+}
+.paginationjs.paginationjs-small .paginationjs-go-input {
+  font-size: 12px;
+}
+.paginationjs.paginationjs-small .paginationjs-go-input > input[type="text"] {
+  width: 26px;
+  height: 24px;
+  font-size: 12px;
+}
+.paginationjs.paginationjs-small .paginationjs-go-button {
+  font-size: 12px;
+}
+.paginationjs.paginationjs-small .paginationjs-go-button > input[type="button"] {
+  min-width: 30px;
+  height: 26px;
+  line-height: 24px;
+  padding: 0 6px;
+  font-size: 12px;
+}
+.paginationjs.paginationjs-small .paginationjs-nav {
+  height: 26px;
+  line-height: 26px;
+  font-size: 12px;
+}
+.paginationjs.paginationjs-big {
+  font-size: 16px;
+}
+.paginationjs.paginationjs-big .paginationjs-pages li > a {
+  min-width: 36px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 16px;
+}
+.paginationjs.paginationjs-big .paginationjs-pages li.active > a {
+  height: 36px;
+  line-height: 36px;
+}
+.paginationjs.paginationjs-big .paginationjs-go-input {
+  font-size: 16px;
+}
+.paginationjs.paginationjs-big .paginationjs-go-input > input[type="text"] {
+  width: 36px;
+  height: 34px;
+  font-size: 16px;
+}
+.paginationjs.paginationjs-big .paginationjs-go-button {
+  font-size: 16px;
+}
+.paginationjs.paginationjs-big .paginationjs-go-button > input[type="button"] {
+  min-width: 50px;
+  height: 36px;
+  line-height: 34px;
+  padding: 0 12px;
+  font-size: 16px;
+}
+.paginationjs.paginationjs-big .paginationjs-nav {
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+}
+.paginationjs.paginationjs-theme-blue .paginationjs-pages li {
+  border-color: #289DE9;
+}
+.paginationjs.paginationjs-theme-blue .paginationjs-pages li > a {
+  color: #289DE9;
+}
+.paginationjs.paginationjs-theme-blue .paginationjs-pages li > a:hover {
+  background: #E9F4FC;
+}
+.paginationjs.paginationjs-theme-blue .paginationjs-pages li.active > a {
+  background: #289DE9;
+  color: #fff;
+}
+.paginationjs.paginationjs-theme-blue .paginationjs-pages li.disabled > a:hover {
+  background: none;
+}
+.paginationjs.paginationjs-theme-blue .paginationjs-go-input > input[type="text"] {
+  border-color: #289DE9;
+}
+.paginationjs.paginationjs-theme-blue .paginationjs-go-button > input[type="button"] {
+  background: #289DE9;
+  border-color: #289DE9;
+  color: #fff;
+}
+.paginationjs.paginationjs-theme-blue .paginationjs-go-button > input[type="button"]:hover {
+  background-color: #3CA5EA;
+}
+.paginationjs.paginationjs-theme-green .paginationjs-pages li {
+  border-color: #449D44;
+}
+.paginationjs.paginationjs-theme-green .paginationjs-pages li > a {
+  color: #449D44;
+}
+.paginationjs.paginationjs-theme-green .paginationjs-pages li > a:hover {
+  background: #EBF4EB;
+}
+.paginationjs.paginationjs-theme-green .paginationjs-pages li.active > a {
+  background: #449D44;
+  color: #fff;
+}
+.paginationjs.paginationjs-theme-green .paginationjs-pages li.disabled > a:hover {
+  background: none;
+}
+.paginationjs.paginationjs-theme-green .paginationjs-go-input > input[type="text"] {
+  border-color: #449D44;
+}
+.paginationjs.paginationjs-theme-green .paginationjs-go-button > input[type="button"] {
+  background: #449D44;
+  border-color: #449D44;
+  color: #fff;
+}
+.paginationjs.paginationjs-theme-green .paginationjs-go-button > input[type="button"]:hover {
+  background-color: #55A555;
+}
+.paginationjs.paginationjs-theme-yellow .paginationjs-pages li {
+  border-color: #EC971F;
+}
+.paginationjs.paginationjs-theme-yellow .paginationjs-pages li > a {
+  color: #EC971F;
+}
+.paginationjs.paginationjs-theme-yellow .paginationjs-pages li > a:hover {
+  background: #FDF5E9;
+}
+.paginationjs.paginationjs-theme-yellow .paginationjs-pages li.active > a {
+  background: #EC971F;
+  color: #fff;
+}
+.paginationjs.paginationjs-theme-yellow .paginationjs-pages li.disabled > a:hover {
+  background: none;
+}
+.paginationjs.paginationjs-theme-yellow .paginationjs-go-input > input[type="text"] {
+  border-color: #EC971F;
+}
+.paginationjs.paginationjs-theme-yellow .paginationjs-go-button > input[type="button"] {
+  background: #EC971F;
+  border-color: #EC971F;
+  color: #fff;
+}
+.paginationjs.paginationjs-theme-yellow .paginationjs-go-button > input[type="button"]:hover {
+  background-color: #EEA135;
+}
+.paginationjs.paginationjs-theme-red .paginationjs-pages li {
+  border-color: #C9302C;
+}
+.paginationjs.paginationjs-theme-red .paginationjs-pages li > a {
+  color: #C9302C;
+}
+.paginationjs.paginationjs-theme-red .paginationjs-pages li > a:hover {
+  background: #FAEAEA;
+}
+.paginationjs.paginationjs-theme-red .paginationjs-pages li.active > a {
+  background: #C9302C;
+  color: #fff;
+}
+.paginationjs.paginationjs-theme-red .paginationjs-pages li.disabled > a:hover {
+  background: none;
+}
+.paginationjs.paginationjs-theme-red .paginationjs-go-input > input[type="text"] {
+  border-color: #C9302C;
+}
+.paginationjs.paginationjs-theme-red .paginationjs-go-button > input[type="button"] {
+  background: #C9302C;
+  border-color: #C9302C;
+  color: #fff;
+}
+.paginationjs.paginationjs-theme-red .paginationjs-go-button > input[type="button"]:hover {
+  background-color: #CE4541;
+}
+/* Hacks for IE 6~9 */
+.paginationjs .paginationjs-go-input {
+  *margin-left: 5px;
+  margin-left: 5px\0;
+}
+.paginationjs .paginationjs-go-input > input[type="text"] {
+  *line-height: 28px;
+  line-height: 28px\0;
+  *vertical-align: middle;
+  vertical-align: middle\0;
+}
+.paginationjs .paginationjs-go-button {
+  *margin-left: 5px;
+  margin-left: 5px\0;
+}
+.paginationjs .paginationjs-go-button > input[type="button"] {
+  *vertical-align: middle;
+  vertical-align: middle\0;
+}
+.paginationjs.paginationjs-big .paginationjs-pages li > a {
+  line-height: 36px\0;
+}
+.paginationjs.paginationjs-big .paginationjs-go-input > input[type="text"] {
+  *height: 35px;
+  height: 36px\0;
+  *line-height: 36px;
+  line-height: 36px\0;
+}
+.pagination__arrow {
+  display: flex;
+  align-items: center;
+  color: #778CA2;
+}
 body {
   margin: 0;
   padding: 0;
@@ -73,7 +401,8 @@ a {
 .btns__blue,
 .btns__green,
 .btns__gray,
-.btns__add-textual {
+.btns__add-textual,
+.btns__orange {
   outline: none;
   border: 0;
   cursor: pointer;
@@ -81,7 +410,8 @@ a {
 .btns__blue:focus,
 .btns__green:focus,
 .btns__gray:focus,
-.btns__add-textual:focus {
+.btns__add-textual:focus,
+.btns__orange:focus {
   outline: none;
 }
 .btns__blue,
@@ -148,6 +478,18 @@ a {
   width: 18px;
   height: 18px;
 }
+.btns__orange {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #FFAB2B;
+}
 .form__holder-part.flex,
 .form__holder--isolated-part.flex {
   display: flex;
@@ -208,7 +550,7 @@ a {
 }
 .registration {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -248,6 +590,14 @@ a {
   background: #fff;
   border-radius: 4px;
   box-shadow: 0px 2px 80px rgba(37, 38, 49, 0.05);
+}
+.registration__form-weak-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 25px;
+  color: #778CA2;
 }
 .registration__form-btn {
   width: 100%;
@@ -1398,4 +1748,228 @@ a {
 }
 .modal__footer-text.have-margin-left {
   margin-left: 30px;
+}
+.procurement {
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+}
+.procurement__no-procurement {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.procurement__no-procurement-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 20px;
+  text-align: center;
+  color: #252631;
+}
+.procurement__no-procurement-btn {
+  padding: 18px 40px;
+  margin-top: 20px;
+}
+.procurement__wrapper {
+  width: 100%;
+}
+.procurement__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+.participant {
+  width: 100%;
+}
+.participant__user {
+  width: 100%;
+  padding: 30px 24px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 4px;
+}
+.participant__user-header {
+  width: 100%;
+  height: 38px;
+  margin-bottom: 24px;
+}
+.participant__user-avatar {
+  width: 36px;
+  height: 36px;
+  float: left;
+  margin-right: 20px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.participant__user-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.participant__user-organizer {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #778CA2;
+}
+.participant__user-login {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #252631;
+}
+.participant__user-infowrapper {
+  float: left;
+}
+.participant__user-textual {
+  width: 100%;
+  max-width: 724px;
+  float: left;
+}
+.participant__user-paragraph {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #778CA2;
+}
+.participant__user-paragraph.have-margin {
+  margin-bottom: 20px;
+}
+.participant__user-purse {
+  width: 100%;
+  max-width: 312px;
+}
+.participant__user-holder {
+  display: flex;
+  justify-content: space-between;
+}
+.participant__user-progress {
+  width: 100%;
+  height: 6px;
+  max-width: 312px;
+  border-radius: 1px;
+  background: #F2F4F6;
+  position: relative;
+  margin-bottom: 30px;
+}
+.participant__user-progress span {
+  width: 70%;
+  height: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: #FE4D97;
+}
+.participant__user-money {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 19px;
+  color: #252631;
+  margin-bottom: 10px;
+}
+.participant__user-money-ico {
+  width: 24px;
+  height: 24px;
+  margin-top: 20px;
+  fill: #778CA2;
+}
+.participant__user-alert-btn {
+  height: 46px;
+  min-width: 246px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.participant__additionally {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+.participant__additionally-participants {
+  width: calc(70% - 30px);
+  height: 371px;
+  box-sizing: border-box;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 4px;
+  margin-right: 30px;
+}
+.participant__additionally-header {
+  height: 50px;
+  border-bottom: 1px solid #E8ECEF;
+  display: flex;
+  justify-content: space-between;
+}
+.participant__additionally-body {
+  width: 100%;
+  max-height: 274px;
+  padding-top: 22px;
+  overflow-x: auto;
+}
+.participant__additionally-useritem {
+  margin-right: 5px;
+}
+.participant__additionally-useritem.green {
+  color: #6DD230;
+}
+.participant__additionally-useritem.red {
+  color: #FE4D97;
+}
+.participant__additionally-useritem.gray {
+  color: #778CA2;
+}
+.participant__additionally-account {
+  width: 30%;
+  height: 371px;
+  box-sizing: border-box;
+  padding: 24px;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.participant__additionally-ico {
+  width: 24px;
+  height: 24px;
+  fill: #778CA2;
+}
+.participant__additionally-partinfo {
+  display: flex;
+}
+.participant__additionally-purse {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.participant__additionally-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: right;
+  color: #98A9BC;
+}
+.participant__additionally-footer {
+  border-top: 1px solid #E8ECEF;
+  padding-top: 24px;
+}
+.participant__additionally-btn {
+  width: 170px;
+  height: 46px;
+  margin-top: 36px;
+  float: right;
 }

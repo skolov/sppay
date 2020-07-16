@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <include src="../sections/head.html"></include>
+</head>
+
+<body>
+
+    <main class="main">
+        <include src="../sections/mainMenu.html"></include>
+        
+        <div class="screen-view">
+
+            <include src="../sections/topPanel.html"></include>
+
+            <div class="content-wrapper">
+
+                <div class="procurement">
+
+                    <!--
+                    <div class="procurement__no-procurement">
+                        <img alt="" class="procurement__no-procurement-image" src="/assets/images/illu-no-procurement.svg"/>
+                        <p class="procurement__no-procurement-text">У вас пока нет ни одной закупки</p>
+                        <button class="btns__blue procurement__no-procurement-btn">Создать закупку</button>
+                    </div>
+                    -->
+
+                    <div class="purchase__tabs">
+
+                        <div class="purchase__tabs-holder">
+                            <button class="purchase__tabs-item active">ОРГАНИЗУЮ</button>
+                            <button class="purchase__tabs-item">УЧАСТВУЮ</button>
+                        </div>
+
+                        <button class="btns__add-textual purchase__tabs-create">  
+                            <svg class="btns__add-textual-ico">
+                                <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#blue-plus-ico"></use>
+                            </svg>
+                            СОЗДАТЬ ЗАКУПКУ
+                        </button>
+
+                    </div>
+
+                    <div class="procurement__wrapper">
+
+                        
+                        <div class="procurement__content"></div>
+                        <div class="procurement__pagination"></div>
+
+                    </div>
+
+                </div>
+                
+                
+
+                <div class="copyright">© 2020 SPPAY</div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <include src="../sections/scripts.html"></include>
+</body>
+
+</html>
