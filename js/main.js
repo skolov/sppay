@@ -61,24 +61,48 @@ new Events;
 
 
 
+
+
 $(function(){
+
+    // Кастомные селекты
 
 	if($('select').length) {
 		$('select').niceSelect();
 	}
 
-	if($('.procurement__pagination').length && $('.procurement__content').length) {
-		$('.procurement__pagination').pagination({
-			dataSource: [{
-					name: "Яркие фотошторы, тюль, КПБ",
-					platform: "ogromno.com, Екатринбург",
-					organizer: "Liliya333",
-					paid: "0",
-					limit: "6 700",
-					topay: "6 700",
-					issued: "700",
-					debt: "200"
-				}],
+
+    // Пагинация на странице Закупки
+
+    var dataPurchase = [{
+        name: "Яркие фотошторы, тюль, КПБ",
+		platform: "ogromno.com, Екатринбург",
+		organizer: "Liliya333",
+		paid: "0",
+		limit: "6 700",
+		topay: "6 700",
+		issued: "700",
+		debt: "200"
+    }]
+
+    var dataSuppliers = [{
+        name: "Яркие фотошторы, тюль, КПБ",
+        platform: "ogromno.com, Екатринбург",
+        organizer: "Liliya333",
+        paid: "0",
+        limit: "6 700",
+        topay: "6 700",
+        issued: "700",
+        debt: "200"
+    }]
+
+	if($('.paginate__content').length && $('.paginate__pagination').length) {
+
+        var type = $('.paginate__content').attr("data-type-pagination");
+
+    
+		$('.paginate__pagination').pagination({
+			dataSource: type === 'purchase' ? dataPurchase : dataSuppliers,
 			prevText: `<div class="pagination__arrow">
 									<svg class="btns__add-textual-ico">
 										<use y="2" xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#pagination-arrow-ico"></use>
@@ -93,11 +117,12 @@ $(function(){
 								</div>`,
 			pageSize: 6,
 			callback: function(data, pagination) {
-					var dataHtml = template(data);
-					$('.procurement__content').html(dataHtml);
+					var dataHtml = type  === 'purchase' ? templatePurchase(data) : templateSuppliers(data);
+					$('.paginate__content').html(dataHtml);
 			}
 		})
-	}
+    }
+
 
 });
 
@@ -108,7 +133,7 @@ $(function(){
 
 
 
-function template(data) {
+function templatePurchase(data) {
     var dataHtml = '';
     $.each(data, function (index, item) {
         dataHtml += `
@@ -182,7 +207,47 @@ function template(data) {
                 </div>
             </div>`;
     });
-    dataHtml += '</div>';
+
+    return dataHtml
+}
+
+
+function templateSuppliers(data) {
+    var dataHtml = '';
+    $.each(data, function (index, item) {
+        dataHtml += `
+            <div class="suppliers__item">
+
+                <div class="suppliers__item-header">
+                    РИФЕЙ
+                    <div class="suppliers__item-purchases">
+                        Закупок -12
+                    </div>
+                </div>
+                
+                <div class="suppliers__item-body">
+                
+                    <div class="suppliers__item-textholder main-width">
+                        <p class="suppliers__item-text">
+                            Универсальные моющие средства, профессиональные моющие средства для уборки помещений, моющие средства для пищевых предприятий, средства для стирки, жидкое мыло, кондиционеры для белья
+                        </p>
+                    </div>
+                
+                    <div class="suppliers__item-textholder  additional-width">
+                        <p class="suppliers__item-text">Город: Екатеринбург</p>
+                        <p class="suppliers__item-text">Адрес: улица Белинского, 35</p>
+                        <p class="suppliers__item-text">ИНН: 6679041197</p>
+                        <p class="suppliers__item-text">Сайт: www.esintez.ru, bioprotex.ru</p>
+                    </div>
+                
+                    <div class="suppliers__item-textholder">
+                        <button class="btns__blue suppliers__item-btn">Создать закупку</button>
+                    </div>
+                
+                </div>
+
+            </div>`;
+    });
 
     return dataHtml
 }

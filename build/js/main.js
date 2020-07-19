@@ -68,39 +68,61 @@ function () {
 
 new Events();
 $(function () {
+  // Кастомные селекты
   if ($('select').length) {
     $('select').niceSelect();
-  }
+  } // Пагинация на странице Закупки
 
-  if ($('.procurement__pagination').length && $('.procurement__content').length) {
-    $('.procurement__pagination').pagination({
-      dataSource: [{
-        name: "Яркие фотошторы, тюль, КПБ",
-        platform: "ogromno.com, Екатринбург",
-        organizer: "Liliya333",
-        paid: "0",
-        limit: "6 700",
-        topay: "6 700",
-        issued: "700",
-        debt: "200"
-      }],
+
+  var dataPurchase = [{
+    name: "Яркие фотошторы, тюль, КПБ",
+    platform: "ogromno.com, Екатринбург",
+    organizer: "Liliya333",
+    paid: "0",
+    limit: "6 700",
+    topay: "6 700",
+    issued: "700",
+    debt: "200"
+  }];
+  var dataSuppliers = [{
+    name: "Яркие фотошторы, тюль, КПБ",
+    platform: "ogromno.com, Екатринбург",
+    organizer: "Liliya333",
+    paid: "0",
+    limit: "6 700",
+    topay: "6 700",
+    issued: "700",
+    debt: "200"
+  }];
+
+  if ($('.paginate__content').length && $('.paginate__pagination').length) {
+    var type = $('.paginate__content').attr("data-type-pagination");
+    $('.paginate__pagination').pagination({
+      dataSource: type === 'purchase' ? dataPurchase : dataSuppliers,
       prevText: "<div class=\"pagination__arrow\">\n\t\t\t\t\t\t\t\t\t<svg class=\"btns__add-textual-ico\">\n\t\t\t\t\t\t\t\t\t\t<use y=\"2\" xlink:href=\"/assets/images/sprite-icons/sprite/sprite-icons.svg#pagination-arrow-ico\"></use>\n\t\t\t\t\t\t\t\t\t</svg>\n\t\t\t\t\t\t\t\t\t\u043D\u0430\u0437\u0430\u0434\n\t\t\t\t\t\t\t\t</div>",
       nextText: "<div class=\"pagination__arrow\">\n\t\t\t\t\t\t\t\t\t\u0434\u0430\u043B\u0435\u0435\n\t\t\t\t\t\t\t\t\t<svg class=\"btns__add-textual-ico\" style=\"transform:rotate(180deg)\">\n\t\t\t\t\t\t\t\t\t\t<use y=\"1\" xlink:href=\"/assets/images/sprite-icons/sprite/sprite-icons.svg#pagination-arrow-ico\"></use>\n\t\t\t\t\t\t\t\t\t</svg>\n\t\t\t\t\t\t\t\t</div>",
       pageSize: 6,
       callback: function callback(data, pagination) {
-        var dataHtml = template(data);
-        $('.procurement__content').html(dataHtml);
+        var dataHtml = type === 'purchase' ? templatePurchase(data) : templateSuppliers(data);
+        $('.paginate__content').html(dataHtml);
       }
     });
   }
 });
 
-function template(data) {
+function templatePurchase(data) {
   var dataHtml = '';
   $.each(data, function (index, item) {
     dataHtml += "\n            <div class=\"purchase__acquisition\">\n                <p class=\"purchase__acquisition-name\">".concat(item.name, "</p>\n                <div class=\"purchase__acquisition-infoboard\">\n                    <div class=\"purchase__acquisition-part width-name\">\n                        <p class=\"purchase__acquisition-text\">\n                            \u041F\u043B\u043E\u0449\u0430\u0434\u043A\u0430: ").concat(item.platform, "\n                        </p>\n                        <p class=\"purchase__acquisition-text\">\n                            \u041E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0442\u043E\u0440: ").concat(item.organizer, "\n                        </p>\n                        <button class=\"purchase__acquisition-hover-btn\">\u041F\u043E\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u044C \u0443\u0447\u0430\u0441\u0442\u0438\u0435</button>\n                    </div>\n                    <div class=\"purchase__acquisition-part flex width-purse\">\n                        <div class=\"purchase__acquisition-purse\">\n                            <p class=\"purchase__acquisition-text align-right\">\u041E\u043F\u043B\u0430\u0447\u0435\u043D\u043E</p>\n                            <p class=\"purchase__acquisition-text align-right\">\u041A \u043E\u043F\u043B\u0430\u0442\u0435</p>\n                        </div>\n                        <div class=\"purchase__acquisition-purse\">\n                            <p class=\"purchase__acquisition-text black\">").concat(item.paid, " \u20BD / ").concat(item.limit, " \u20BD</p>\n                            <p class=\"purchase__acquisition-text red\">").concat(item.topay, " \u20BD</p>\n                        </div>\n                    </div>\n                    <div class=\"purchase__acquisition-part flex width-purse\">\n                        <div class=\"purchase__acquisition-purse\">\n                            <p class=\"purchase__acquisition-text align-right\">\u0412\u044B\u0434\u0430\u043D\u043E</p>\n                            <p class=\"purchase__acquisition-text align-right\">\u0414\u043E\u043B\u0433 \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0442\u043E\u0440\u0430</p>\n                        </div>\n                        <div class=\"purchase__acquisition-purse\">\n                            <p class=\"purchase__acquisition-text black\">").concat(item.issued, " \u20BD</p>\n                            <p class=\"purchase__acquisition-text black\">").concat(item.debt, " \u20BD</p>\n                        </div>\n                    </div>\n                    <div class=\"purchase__acquisition-part width-more\">\n                        <button class=\"btns__add-textual\">\n                            <svg class=\"btns__add-textual-ico\">\n                                <use xlink:href=\"/assets/images/sprite-icons/sprite/sprite-icons.svg#more-btn-ico\"></use>\n                            </svg>\n                        </button>\n                        <div class=\"purchase__dropdown\">\n                            <ul class=\"purchase__dropdown-list\">\n                                <li class=\"purchase__dropdown-item\">\n                                    <a class=\"purchase__dropdown-link\" href=\"\">\n                                        <svg class=\"purchase__dropdown-ico\">\n                                            <use xlink:href=\"/assets/images/sprite-icons/sprite/sprite-icons.svg#dropdown-payback-ico\"></use>\n                                        </svg>\n                                        \u041E\u043F\u043B\u0430\u0442\u0438\u0442\u044C\n                                    </a>\n                                </li>\n                                <li class=\"purchase__dropdown-item\">\n                                    <a class=\"purchase__dropdown-link\" href=\"\">\n                                        <svg class=\"purchase__dropdown-ico\">\n                                            <use x=\"-2\" xlink:href=\"/assets/images/sprite-icons/sprite/sprite-icons.svg#dropdown-away-ico\"></use>\n                                        </svg>\n                                        \u043F\u043E\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u044C \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u0435\n                                    </a>\n                                </li>\n                                <li class=\"purchase__dropdown-item\">\n                                    <a class=\"purchase__dropdown-link\" href=\"\">\n                                        <svg class=\"purchase__dropdown-ico\">\n                                            <use x=\"1\" xlink:href=\"/assets/images/sprite-icons/sprite/sprite-icons.svg#dropdown-delete-ico\"></use>\n                                        </svg>\n                                        \u0443\u0434\u0430\u043B\u0438\u0442\u044C \u0437\u0430\u043A\u0443\u043F\u043A\u0443\n                                    </a>\n                                </li>\n                            </ul>\n                        </div>\n                    </div>\n                </div>\n            </div>");
   });
-  dataHtml += '</div>';
+  return dataHtml;
+}
+
+function templateSuppliers(data) {
+  var dataHtml = '';
+  $.each(data, function (index, item) {
+    dataHtml += "\n            <div class=\"suppliers__item\">\n\n                <div class=\"suppliers__item-header\">\n                    \u0420\u0418\u0424\u0415\u0419\n                    <div class=\"suppliers__item-purchases\">\n                        \u0417\u0430\u043A\u0443\u043F\u043E\u043A -12\n                    </div>\n                </div>\n                \n                <div class=\"suppliers__item-body\">\n                \n                    <div class=\"suppliers__item-textholder main-width\">\n                        <p class=\"suppliers__item-text\">\n                            \u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u044B\u0435 \u043C\u043E\u044E\u0449\u0438\u0435 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430, \u043F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0435 \u043C\u043E\u044E\u0449\u0438\u0435 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u0434\u043B\u044F \u0443\u0431\u043E\u0440\u043A\u0438 \u043F\u043E\u043C\u0435\u0449\u0435\u043D\u0438\u0439, \u043C\u043E\u044E\u0449\u0438\u0435 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u0434\u043B\u044F \u043F\u0438\u0449\u0435\u0432\u044B\u0445 \u043F\u0440\u0435\u0434\u043F\u0440\u0438\u044F\u0442\u0438\u0439, \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u0434\u043B\u044F \u0441\u0442\u0438\u0440\u043A\u0438, \u0436\u0438\u0434\u043A\u043E\u0435 \u043C\u044B\u043B\u043E, \u043A\u043E\u043D\u0434\u0438\u0446\u0438\u043E\u043D\u0435\u0440\u044B \u0434\u043B\u044F \u0431\u0435\u043B\u044C\u044F\n                        </p>\n                    </div>\n                \n                    <div class=\"suppliers__item-textholder  additional-width\">\n                        <p class=\"suppliers__item-text\">\u0413\u043E\u0440\u043E\u0434: \u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0431\u0443\u0440\u0433</p>\n                        <p class=\"suppliers__item-text\">\u0410\u0434\u0440\u0435\u0441: \u0443\u043B\u0438\u0446\u0430 \u0411\u0435\u043B\u0438\u043D\u0441\u043A\u043E\u0433\u043E, 35</p>\n                        <p class=\"suppliers__item-text\">\u0418\u041D\u041D: 6679041197</p>\n                        <p class=\"suppliers__item-text\">\u0421\u0430\u0439\u0442: www.esintez.ru, bioprotex.ru</p>\n                    </div>\n                \n                    <div class=\"suppliers__item-textholder\">\n                        <button class=\"btns__blue suppliers__item-btn\">\u0421\u043E\u0437\u0434\u0430\u0442\u044C \u0437\u0430\u043A\u0443\u043F\u043A\u0443</button>\n                    </div>\n                \n                </div>\n\n            </div>";
+  });
   return dataHtml;
 }
 //# sourceMappingURL=main.js.map
