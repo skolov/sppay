@@ -1,5 +1,5 @@
-.profile{
-    &__purse{
+.profile {
+    &__purse {
         width: 100%;
 
         background: #fff;
@@ -11,16 +11,15 @@
         display: flex;
         justify-content: space-between;
 
-        &-container{
-
+        &-container {
             display: flex;
             align-items: center;
 
-            &.info{
+            &.info {
                 min-width: 470px;
             }
 
-            &.controls{
+            &.controls {
                 min-width: 400px;
 
                 display: flex;
@@ -28,22 +27,21 @@
             }
         }
 
-        &-image{
+        &-image {
             float: left;
             margin-right: 26px;
         }
 
-        &-info{
-
+        &-info {
         }
 
-        &-btn{
+        &-btn {
             padding: 0 20px;
             height: 46px;
             margin-right: 20px;
         }
 
-        &-summ{
+        &-summ {
             font-style: normal;
             font-weight: normal;
             font-size: 26px;
@@ -52,32 +50,32 @@
             color: #252631;
         }
 
-        &-lastoperation{
+        &-lastoperation {
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 21px;
 
-            color: #98A9BC;
+            color: #98a9bc;
 
-            span{
-                color: #FE4D97;
+            span {
+                color: #fe4d97;
 
                 margin-left: 25px;
             }
         }
 
-        &-link{
+        &-link {
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 21px;
 
-            color: #4D7CFE;
+            color: #4d7cfe;
         }
     }
 
-    &__alert{
+    &__alert {
         width: 100%;
         height: 64px;
 
@@ -88,7 +86,7 @@
         padding: 16px 18px;
         box-sizing: border-box;
 
-        background:rgba(254,77,151,.08);
+        background: rgba(254, 77, 151, 0.08);
 
         margin-top: 22px;
 
@@ -97,68 +95,66 @@
         font-size: 16px;
         line-height: 19px;
 
-        color: #FE4D97;
+        color: #fe4d97;
 
-        svg{
-            fill: #FE4D97;
+        svg {
+            fill: #fe4d97;
         }
 
-        &.orange{
-            background: rgba(255,171,43,.1);
+        &.orange {
+            background: rgba(255, 171, 43, 0.1);
 
-            color: #FFAB2B;
+            color: #ffab2b;
 
-            svg{
-                fill: #FFAB2B;
+            svg {
+                fill: #ffab2b;
             }
         }
 
-        &-controllers{
+        &-controllers {
             display: flex;
             align-items: center;
         }
 
-        &-ico{
+        &-ico {
             margin-right: 5px;
         }
-
     }
 
-    &__information{
+    &__information {
         width: 100%;
 
         background: #fff;
         margin: 22px 0;
-        
 
         position: relative;
         border-radius: 4px;
         overflow: hidden;
         box-sizing: border-box;
 
-        &-delete{
+        &-delete {
             display: flex;
             justify-content: center;
             align-items: center;
 
             margin: 16px 15px;
 
-            fill: #778CA2;
+            fill: #778ca2;
         }
 
-        &-tabs{
+        &-tabs {
             width: 292px;
             height: 100%;
-            
+
             float: left;
             position: absolute;
 
-            border-right: 1px solid #F2F4F6;
+            border-right: 1px solid #f2f4f6;
 
             box-sizing: border-box;
         }
 
-        &-view{
+        &-view {
             width: calc(100% - 293px);
             height: 100%;
 
@@ -169,7 +165,7 @@
             float: right;
         }
 
-        &-onetab{
+        &-onetab {
             width: 100%;
             height: 70px;
 
@@ -177,19 +173,21 @@
             align-items: center;
             cursor: pointer;
 
-            border-bottom: 1px solid #F2F4F6;
+            user-select: none;
 
-            &:hover{
-                background: #F8FAFB;
+            border-bottom: 1px solid #f2f4f6;
+
+            &:hover {
+                background: #f8fafb;
             }
 
-            &.active{
-                background: #F8FAFB;
+            &.active {
+                background: #f8fafb;
 
                 position: relative;
 
-                &::after{
-                    content: '';
+                &::after {
+                    content: "";
 
                     width: 2px;
                     height: 100%;
@@ -198,27 +196,26 @@
                     right: 0;
                     top: 0;
 
-                    background: #4D7CFE;
+                    background: #4d7cfe;
                 }
 
-                p.profile__information-paragraph{
-                    color: #4D7CFE;
+                p.profile__information-paragraph {
+                    color: #4d7cfe;
                 }
-                p.profile__information-paragraph.gray{
-                    color: #98A9BC;
+                p.profile__information-paragraph.gray {
+                    color: #98a9bc;
                 }
-                
-                svg{
-                    fill: #4D7CFE;
+
+                svg {
+                    fill: #4d7cfe;
                 }
             }
         }
 
-        &-text{
-
+        &-text {
         }
 
-        &-paragraph{
+        &-paragraph {
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
@@ -226,53 +223,52 @@
 
             color: #252631;
 
-            &.gray{
+            &.gray {
                 font-size: 12px;
                 line-height: 18px;
 
-                color: #98A9BC;
+                color: #98a9bc;
             }
         }
 
-        &-tabico{
+        &-tabico {
             width: 18px;
             height: 18px;
 
             margin: 18px 24px;
 
-            fill: #98A9BC;
-
+            fill: #98a9bc;
         }
 
-        &-title{
+        &-title {
             font-style: normal;
             font-weight: normal;
             font-size: 20px;
             line-height: 24px;
-            
+
             margin-bottom: 10px;
 
             color: #252631;
         }
 
-        &-unit{
+        &-unit {
             width: 380px;
             margin-top: 6px;
             margin-right: 20px;
         }
 
-        &-input{
+        &-input {
             padding: 15px 16px;
 
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
             line-height: 1.5;
-            
+
             color: #252631;
         }
 
-        &-label{
+        &-label {
             font-size: 14px;
             line-height: 17px;
             margin: 13px 0;
@@ -280,14 +276,14 @@
             color: #252631;
         }
 
-        &-savebtn{
+        &-savebtn {
             height: 46px;
             width: 150px;
 
             margin-top: 50px;
         }
 
-        &-alert{
+        &-alert {
             font-style: normal;
             font-weight: 300;
             font-size: 14px;
@@ -295,26 +291,24 @@
 
             margin-top: 46px;
 
-            color: #FE4D97;
+            color: #fe4d97;
         }
 
-        &-sendcode{
-
+        &-sendcode {
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
             line-height: 14px;
-            
-            color: #4D7CFE;
+
+            color: #4d7cfe;
 
             background: none;
             border: 0;
 
             cursor: pointer;
-
         }
 
-        &-turbid{
+        &-turbid {
             margin-top: 46px;
             margin-bottom: 0;
 
@@ -323,16 +317,15 @@
             font-size: 14px;
             line-height: 150%;
 
-            color: #98A9BC;
+            color: #98a9bc;
         }
 
-        &-addbtn{
+        &-addbtn {
             margin-top: 16px;
         }
-        
     }
 
-    &__settings{
+    &__settings {
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -342,7 +335,7 @@
 
         color: #000000;
 
-        &-title{
+        &-title {
             font-style: normal;
             font-weight: normal;
             font-size: 18px;
@@ -352,10 +345,10 @@
         }
     }
 
-    &__social{
+    &__social {
         width: 100%;
-  
-        &-item{
+
+        &-item {
             width: 100%;
             height: 56px;
 
@@ -363,10 +356,10 @@
             align-items: center;
             justify-content: space-between;
 
-            border-bottom: 1px solid #F2F4F6;
+            border-bottom: 1px solid #f2f4f6;
         }
 
-        &-ico-holder{
+        &-ico-holder {
             height: 56px;
 
             display: flex;
@@ -374,12 +367,12 @@
             align-items: center;
         }
 
-        &-ico{
+        &-ico {
             width: 30px;
             height: 30px;
         }
 
-        &-text{
+        &-text {
             margin-left: 10px;
 
             font-style: normal;
@@ -387,16 +380,16 @@
             font-size: 14px;
             line-height: 21px;
 
-            color: #778CA2;
+            color: #778ca2;
         }
 
-        &-controllers{
+        &-controllers {
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        &-login{
+        &-login {
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
@@ -407,4 +400,8 @@
             color: #252631;
         }
     }
+}
+
+div[data-tabname="settings"] {
+    display: none;
 }

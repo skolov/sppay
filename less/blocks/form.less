@@ -1,50 +1,50 @@
-.form{
-
-    &__holder, &__holder--isolated{
-
-        &-part{
-            &.flex{
+.form {
+    &__holder,
+    &__holder--isolated {
+        &-part {
+            &.flex {
                 display: flex;
             }
         }
 
-        &.flex{
+        &.flex {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-        } 
-
+        }
     }
 
-    &__holder--isolated{
+    &__holder--isolated {
         margin: 30px 0 25px;
     }
 
-    &__textarea{
+    &__textarea {
         width: 100%;
         resize: none;
 
+        font-family: "Rubik";
+
         box-sizing: border-box;
 
         padding: 18px 16px;
 
         border-radius: 4px;
-        border: 1px solid #E8ECEF;
+        border: 1px solid #e8ecef;
 
         outline: none;
-        
     }
 
-    &__input{
+    &__input {
         width: 100%;
 
         box-sizing: border-box;
         padding: 18px 16px;
 
         border-radius: 4px;
-        border: 1px solid #E8ECEF;
+        border: 1px solid #e8ecef;
 
         outline: none;
+        position: relative;
 
         font-style: normal;
         font-family: inherit;
@@ -52,16 +52,16 @@
         font-size: 14px;
         line-height: 1.5;
 
-        &.disabled{
-            background: #F8FAFB;
-            border: 1px solid #E8ECEF;
+        &.disabled {
+            background: #f8fafb;
+            border: 1px solid #e8ecef;
 
-            color: #98A9BC;
+            color: #98a9bc;
         }
 
-        &.wrong{
-            background: #FFEEF5;
-            border: 1px solid #FE4D97;
+        &.wrong {
+            background: #ffeef5;
+            border: 1px solid #fe4d97;
 
             font-style: normal;
             font-weight: 500;
@@ -70,10 +70,9 @@
 
             color: #252631;
         }
-
     }
 
-    &__label{
+    &__label {
         width: 100%;
 
         font-style: normal;
@@ -83,7 +82,25 @@
 
         color: #252631;
 
+        display: inline-block;
+
         margin: 18px 0;
     }
+}
 
+form {
+    label {
+        width: 100%;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.5;
+
+        color: #252631;
+
+        display: inline-block;
+
+        margin: 18px 0;
+    }
 }

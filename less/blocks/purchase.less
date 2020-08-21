@@ -1,10 +1,10 @@
-.purchase{
+.purchase {
     width: 100%;
     height: 100%;
 
     margin-bottom: 40px;
 
-    &__tabs{
+    &__tabs {
         width: 100%;
         height: 60px;
 
@@ -20,32 +20,32 @@
         text-align: center;
         text-transform: uppercase;
 
-        color: #778CA2;
+        color: #778ca2;
 
-        &-item{
+        &-item {
             margin-right: 25px;
 
             background: none;
             border: none;
             cursor: pointer;
 
-            &.active{
-                color: #4285F4;
+            &.active {
+                color: #4285f4;
                 border-bottom: 2px solid;
             }
         }
     }
 
-    &__content{
-        width: 100%;    
+    &__content {
+        width: 100%;
     }
 
-    &__company{
+    &__company {
         width: 100%;
 
         box-sizing: border-box;
         padding: 28px 24px;
-        
+
         border-radius: 4px;
 
         background: #fff;
@@ -56,15 +56,15 @@
 
         margin-bottom: 6px;
 
-        &-part{
-            &.flex{
+        &-part {
+            &.flex {
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
         }
 
-        &-name{
+        &-name {
             font-style: normal;
             font-weight: normal;
             font-size: 18px;
@@ -73,28 +73,28 @@
             color: #252631;
         }
 
-        &-trading{
+        &-trading {
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 21px;
 
-            color: #98A9BC;
+            color: #98a9bc;
         }
 
-        &-progress{
+        &-progress {
             width: 130px;
             height: 6px;
 
             border-radius: 1px;
 
-            background: #F2F4F6;
+            background: #f2f4f6;
 
             position: relative;
 
             overflow: hidden;
 
-            span{
+            span {
                 display: block;
                 width: 80%;
                 height: 6px;
@@ -102,48 +102,47 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                
-                background: #FE4D97;
+
+                background: #fe4d97;
                 border-radius: 1px;
             }
 
-            &.completed{
-                span{
+            &.completed {
+                span {
                     width: 100%;
-                    background: #6DD230;
+                    background: #6dd230;
                 }
             }
         }
 
-        &-purse{
+        &-purse {
             margin-left: 40px;
         }
 
-        &-price{
+        &-price {
             font-style: normal;
             font-weight: 300;
             font-size: 16px;
             line-height: 19px;
 
             color: #252631;
-
         }
 
-        &-text{
+        &-text {
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 21px;
 
-            color: #98A9BC;
+            color: #98a9bc;
         }
 
-        &-edit{
+        &-edit {
             margin: 0 20px 0 40px;
         }
     }
 
-    &__controllers{
+    &__controllers {
         width: 100%;
         padding: 0;
 
@@ -157,27 +156,34 @@
         justify-content: space-between;
         align-items: center;
 
-        &.white{
+        &.right {
+            justify-content: flex-end;
+            svg {
+                fill: #4d7cfe;
+            }
+        }
+
+        &.white {
             background: #fff;
             margin: 0 0 30px 0;
             padding: 20px;
         }
 
-        &-btn{
+        &-btn {
             padding: 15px 25px;
         }
 
-        &-text{
+        &-text {
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
             line-height: 19px;
 
-            color: #778CA2;
+            color: #778ca2;
         }
     }
 
-    &__acquisition{
+    &__acquisition {
         width: 100%;
         padding: 18px 24px;
 
@@ -186,60 +192,58 @@
         background: #fff;
         border-radius: 4px;
 
-        .btn-dropdown{
-
-            &.collapsed{
+        .btn-dropdown {
+            &.collapsed {
                 transform: rotate(-90deg);
             }
         }
 
-        &.flex{
+        &.flex {
             display: flex;
             align-items: center;
         }
-
 
         margin-bottom: 6px;
         min-height: 90px;
 
         position: relative;
-        
-        &.gray{
-            background: #F2F4F6;
+
+        &.gray {
+            background: #f2f4f6;
         }
 
-        &-part{
-            &.flex{
+        &-part {
+            &.flex {
                 display: flex;
                 justify-content: center;
             }
-            &.width-name{
+            &.width-name {
                 width: 400px;
             }
-            &.width-purse{
+            &.width-purse {
                 width: 300px;
             }
-            &.width-more{
+            &.width-more {
                 width: 20px;
             }
-            &.width-small{
+            &.width-small {
                 max-width: 20px;
                 position: absolute;
                 left: 20px;
             }
-            &.width-platform-name{
+            &.width-platform-name {
                 width: 330px;
             }
-            .no-margin{
+            .no-margin {
                 margin: 0;
             }
         }
 
-        &-purse{
+        &-purse {
             margin: 0 10px;
         }
 
-        &-number{
+        &-number {
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
@@ -250,7 +254,7 @@
             color: #252631;
         }
 
-        &-name{
+        &-name {
             width: 100%;
             font-style: normal;
             font-weight: normal;
@@ -261,61 +265,62 @@
 
             margin-bottom: 10px;
 
-            &.smaller-font{
+            &.smaller-font {
                 font-size: 18px;
                 line-height: 22px;
             }
         }
 
-        &-infoboard{
+        &-infoboard {
             width: 100%;
 
             display: flex;
             justify-content: space-between;
             align-items: center;
 
-            &.other-padding{
+            &.other-padding {
                 padding-left: 60px;
                 box-sizing: border-box;
             }
         }
 
-        &-text{
+        &-text {
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 21px;
 
-            color: #98A9BC;
+            color: #98a9bc;
 
-            &.align-right{
+            &.align-right {
                 text-align: right;
             }
 
-            &.red, &.green, &.black{
-                color: #FE4D97;
+            &.red,
+            &.green,
+            &.black {
+                color: #fe4d97;
                 font-size: 16px;
                 line-height: 19px;
             }
 
-            &.green{
-                color: #6DD230;
+            &.green {
+                color: #6dd230;
             }
 
-            &.black{
+            &.black {
                 color: #252631;
             }
-
         }
 
-        &-hover-btn{
+        &-hover-btn {
             font-style: normal;
             font-weight: 500;
             font-size: 12px;
             line-height: 14px;
             text-transform: uppercase;
 
-            color: #4D7CFE;
+            color: #4d7cfe;
 
             cursor: pointer;
 
@@ -325,9 +330,13 @@
             border: 0;
 
             position: relative;
+
+            &:hover + div {
+                display: block;
+            }
         }
 
-        &-btn{
+        &-btn {
             width: 20px;
             height: 20px;
 
@@ -335,17 +344,16 @@
             align-items: center;
             justify-content: center;
         }
-        
     }
 
-    &__description{
+    &__description {
         max-width: 627px;
 
         box-sizing: border-box;
 
         padding: 36px 24px;
 
-        background: #FFFFFF;
+        background: #ffffff;
         box-shadow: 0px 2px 16px rgba(153, 155, 168, 0.12);
         border-radius: 2px;
 
@@ -353,7 +361,9 @@
 
         z-index: 2;
 
-        &-title{
+        display: none;
+
+        &-title {
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
@@ -364,43 +374,50 @@
             margin-bottom: 10px;
         }
 
-        &-text{
+        &-text {
             font-style: normal;
             font-weight: 300;
             font-size: 14px;
             line-height: 21px;
 
-            color: #778CA2;
+            color: #778ca2;
 
-            &.other-margin{
+            &.other-margin {
                 margin-bottom: 20px;
             }
         }
     }
 
-    &__dropdown{
+    &__dropdown {
         padding: 22px;
 
         position: absolute;
         right: 20px;
 
+        display: none;
+
+        min-width: 188px;
+
         background: #ffffff;
         box-shadow: 0px 2px 16px rgba(153, 155, 168, 0.12);
         border-radius: 4px;
-        
+
         z-index: 2;
 
-        &-list{
+        &.active {
+            display: block;
+        }
+
+        &-list {
             width: 100%;
         }
 
-        &-item{
+        &-item {
             width: 100%;
             display: block;
-
         }
 
-        &-link{
+        &-link {
             height: 40px;
 
             display: flex;
@@ -415,24 +432,35 @@
 
             color: #252631;
 
-            &:hover{
-                color: #4D7CFE;
+            white-space: nowrap;
 
-                svg{
-                    fill: #4D7CFE;
+            &:hover {
+                color: #4d7cfe;
+
+                svg {
+                    fill: #4d7cfe;
                 }
             }
-
         }
 
-        &-ico{
+        &-ico {
             width: 19px;
             height: 19px;
 
-            fill:#778CA2;
+            fill: #778ca2;
 
             margin-right: 6px;
         }
     }
+}
 
+div[data-expand-block] {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
+div[data-tabname="participate"] {
+    display: none;
 }

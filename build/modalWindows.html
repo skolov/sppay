@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, viewport-fit=cover">
 <title>Sppay</title>
 <link rel="stylesheet" href="css/style.min.css">
 <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-</head>
+    </head>
 
-<body>
-
-    <main class="main">
-        <div class="mainMenu">
-
+    <body>
+        <main class="main">
+            <div class="mainMenu">
     <div class="mainMenu__logo">
         <img class="" src="/assets/images/icons/sppay-logo.svg" alt="logo">
     </div>
 
     <ul class="mainMenu__container">
-        
         <li class="mainMenu__container-item">
             <a class="mainMenu__container-link" href="">
                 <svg class="mainMenu__container-ico">
@@ -47,22 +43,20 @@
             </a>
         </li>
 
-        <li class="mainMenu__container-item">
-            <a class="mainMenu__container-link active" href="">
+        <li class="mainMenu__container-item active">
+            <a class="mainMenu__container-link" href="">
                 <svg class="mainMenu__container-ico">
                     <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#menu-item-user"></use>
                 </svg>
                 Профиль
             </a>
         </li>
-
     </ul>
-
 </div>
-        
-        <div class="screen-view">
 
-            <div class="topPanel">
+
+            <div class="screen-view">
+                <div class="topPanel">
 
     <div class="topPanel__namepage">
         ООО "ХОЗЛИДЕР"
@@ -97,20 +91,14 @@
 
 </div>
 
-            <div class="content-wrapper">
-
-
-                <div class="copyright">© 2020 SPPAY</div>
-
+                <div class="content-wrapper">
+                    <div class="copyright">© 2020 SPPAY</div>
+                </div>
             </div>
-
-        </div>
-
-    </main>
-
-    <div class="modal">
-
+        </main>
         <!--
+        <div class="modal active" data-close-modal>
+            
 
         <div class="modal__window">
 
@@ -120,6 +108,7 @@
                     <svg class="modal__close-ico">
                         <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"></use>
                     </svg>
+                    <div class="modal__close-nothc" data-close-modal></div>
                 </button>
             </div>
 
@@ -155,6 +144,7 @@
                     <svg class="modal__close-ico">
                         <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"></use>
                     </svg>
+                    <div class="modal__close-nothc" data-close-modal></div>
                 </button>
             </div>
 
@@ -192,6 +182,7 @@
                     <svg class="modal__close-ico">
                         <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"></use>
                     </svg>
+                    <div class="modal__close-nothc" data-close-modal></div>
                 </button>
             </div>
 
@@ -218,7 +209,7 @@
         </div>
 
         -->
-
+        <div style="width: 100px; height: 100px; background: red;" data-open-modal="2"></div>
         <!--   
 
         <div class="modal__window">
@@ -229,6 +220,7 @@
                     <svg class="modal__close-ico">
                         <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"></use>
                     </svg>
+                    <div class="modal__close-nothc" data-close-modal></div>
                 </button>
             </div>
 
@@ -271,6 +263,7 @@
                     <svg class="modal__close-ico">
                         <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"></use>
                     </svg>
+                    <div class="modal__close-nothc" data-close-modal></div>
                 </button>
             </div>
 
@@ -316,7 +309,7 @@
 
         </div>
 
-        -->  
+        -->
 
         <!--
 
@@ -328,6 +321,7 @@
                     <svg class="modal__close-ico">
                         <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"></use>
                     </svg>
+                    <div class="modal__close-nothc" data-close-modal></div>
                 </button>
             </div>
 
@@ -370,7 +364,6 @@
         
         -->
 
-
         <!--
 
         
@@ -382,6 +375,7 @@
                     <svg class="modal__close-ico">
                         <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"></use>
                     </svg>
+                    <div class="modal__close-nothc" data-close-modal></div>
                 </button>
             </div>
 
@@ -429,54 +423,130 @@
 
         -->
 
-
-        <div class="modal__window">
-
-            <div class="modal__header">
-                Создание закупки
-                <button class="modal__close">
-                    <svg class="modal__close-ico">
-                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"></use>
-                    </svg>
-                </button>
-            </div>
-
-            <div class="modal__body">
-
-                <div class="modal__body-holder floating">
-                    <p class="form__label modal__body-label">Поставщик</p>
-                    <input class="form__input disabled modal__body-input" type="text" value="РИФЕЙ">
+        <!--
+            <div class="modal__window">
+                <div class="modal__header">
+                    Создание закупки
+                    <button class="modal__close">
+                        <svg class="modal__close-ico">
+                            <use
+                                xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"
+                            ></use>
+                        </svg>
+                        <div class="modal__close-nothc" data-close-modal></div>
+                    </button>
                 </div>
 
-                <div class="modal__body-holder wider-margin flex">
-                    <div class="modal__body-holderpart">
-                        <p class="form__label modal__body-label">Минимальная сумма</p>
-                        <input class="form__input modal__body-input" type="text" value="40 000">
-                        <span class="modal__body-symbol">₽</span>
+                <div class="modal__body">
+                    <div class="modal__body-holder floating">
+                        <p class="form__label modal__body-label">Поставщик</p>
+                        <input
+                            class="form__input disabled modal__body-input"
+                            type="text"
+                            value="РИФЕЙ"
+                        />
+                    </div>
+
+                    <div class="modal__body-holder wider-margin flex">
+                        <div class="modal__body-holderpart">
+                            <p class="form__label modal__body-label">
+                                Минимальная сумма
+                            </p>
+                            <input
+                                class="form__input modal__body-input"
+                                type="text"
+                                value="40 000"
+                            />
+                            <span class="modal__body-symbol">₽</span>
+                        </div>
                     </div>
                 </div>
 
+                <div class="modal__footer flex">
+                    <button
+                        class="btns__gray gray-text upper-text modal__footer-button"
+                    >
+                        отмена
+                    </button>
+                    <button
+                        class="btns__blue upper-text modal__footer-button min-width-pay"
+                    >
+                        Создать закупку
+                    </button>
+                </div>
             </div>
 
-            <div class="modal__footer flex">
-                <button class="btns__gray gray-text upper-text modal__footer-button">отмена</button>
-                <button class="btns__blue upper-text modal__footer-button min-width-pay">Создать закупку</button>
-            </div>
+            <div class="modal__window" data-modal="2">
+                <div class="modal__header">
+                    Добавить площадку
+                    <button class="modal__close">
+                        <svg class="modal__close-ico">
+                            <use
+                                xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#close-ico"
+                            ></use>
+                        </svg>
+                        <div class="modal__close-nothc" data-close-modal></div>
+                    </button>
+                </div>
 
+                <div class="modal__body">
+                    <div class="modal__body-holder floating">
+                        <p class="form__label modal__body-label">
+                            Название площадки
+                        </p>
+                        <input
+                            class="form__input modal__body-input"
+                            type="text"
+                            value="ogromno.ru"
+                        />
+                    </div>
+
+                    <div class="modal__body-holder floating">
+                        <p class="form__label modal__body-label">
+                            Адрес площадки
+                        </p>
+                        <input
+                            class="form__input modal__body-input"
+                            type="text"
+                            value="https://zakupis-ekb.ru/"
+                        />
+                    </div>
+
+                    <div class="modal__body-holder wider-margin flex">
+                        <div class="modal__body-holderpart">
+                            <p class="form__label modal__body-label">
+                                Комиссия
+                            </p>
+                            <input
+                                class="form__input modal__body-input"
+                                type="text"
+                                value="4"
+                            />
+                            <span class="modal__body-symbol">%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal__footer flex">
+                    <button
+                        class="btns__gray gray-text upper-text modal__footer-button"
+                        data-close-modal
+                    >
+                        отмена
+                    </button>
+                    <button
+                        class="btns__blue upper-text modal__footer-button min-width-pay"
+                    >
+                        Добавить
+                    </button>
+                </div>
+            </div>
+            
         </div>
-
-
-     
-
-        
-
-
-    </div>
-
-    <script src="/js/jquery.js"></script> 
+-->
+        <script src="/js/jquery.js"></script> 
 <script src="/js/jquery.nice-select.min.js"></script>
 <script src="/js/pagination.min.js"></script>
 <script src="/js/main.js"></script>
-</body>
-
+    </body>
 </html>

@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, viewport-fit=cover">
 <title>Sppay</title>
 <link rel="stylesheet" href="css/style.min.css">
 <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-</head>
+    </head>
 
-<body>
-
-    <main class="main">
-
-        <div class="mainMenu">
-
+    <body>
+        <main class="main">
+            <div class="mainMenu">
     <div class="mainMenu__logo">
         <img class="" src="/assets/images/icons/sppay-logo.svg" alt="logo">
     </div>
 
     <ul class="mainMenu__container">
-        
         <li class="mainMenu__container-item">
             <a class="mainMenu__container-link" href="">
                 <svg class="mainMenu__container-ico">
@@ -48,22 +43,20 @@
             </a>
         </li>
 
-        <li class="mainMenu__container-item">
-            <a class="mainMenu__container-link active" href="">
+        <li class="mainMenu__container-item active">
+            <a class="mainMenu__container-link" href="">
                 <svg class="mainMenu__container-ico">
                     <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#menu-item-user"></use>
                 </svg>
                 Профиль
             </a>
         </li>
-
     </ul>
-
 </div>
 
-        <div class="screen-view">
 
-            <div class="topPanel">
+            <div class="screen-view">
+                <div class="topPanel">
 
     <div class="topPanel__namepage">
         ООО "ХОЗЛИДЕР"
@@ -98,108 +91,112 @@
 
 </div>
 
-            <div class="content-wrapper">
+                <div class="content-wrapper">
+                    <div class="purchase">
+                        <div class="purchase__tabs">
+                            <div class="purchase__tabs-holder">
+                                <button class="purchase__tabs-item active" data-tab-switch="organize" data-tab-parent="">
+                                    ОРГАНИЗУЮ
+                                </button>
+                                <button class="purchase__tabs-item" data-tab-switch="participate" data-tab-parent="">
+                                    УЧАСТВУЮ
+                                </button>
+                            </div>
 
-                <div class="purchase">
-
-                    <div class="purchase__tabs">
-
-                        <div class="purchase__tabs-holder">
-                            <button class="purchase__tabs-item active">ОРГАНИЗУЮ</button>
-                            <button class="purchase__tabs-item">УЧАСТВУЮ</button>
+                            <button class="btns__add-textual purchase__tabs-create">
+                                <svg class="btns__add-textual-ico">
+                                    <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#blue-plus-ico"></use>
+                                </svg>
+                                СОЗДАТЬ ЗАКУПКУ
+                            </button>
                         </div>
 
-                        <button class="btns__add-textual purchase__tabs-create">  
-                            <svg class="btns__add-textual-ico">
-                                <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#blue-plus-ico"></use>
-                            </svg>
-                            СОЗДАТЬ ЗАКУПКУ
-                        </button>
+                        <div class="purchase__content">
+                            <div data-tabname="organize">
+                                <div class="purchase__company">
+                                    <div class="purchase__company-part">
+                                        <p class="purchase__company-name">
+                                            Торговая марка "СКИФ ПРО"
+                                        </p>
+                                        <p class="purchase__company-trading">
+                                            Площадки: ogromno.com,
+                                            zakupis-ekb.ru
+                                        </p>
+                                    </div>
 
+                                    <div class="purchase__company-part flex">
+                                        <div class="purchase__company-progress">
+                                            <span></span>
+                                        </div>
+
+                                        <div class="purchase__company-purse">
+                                            <p class="purchase__company-price">
+                                                12 000 ₽ / 30 000 ₽
+                                            </p>
+                                            <p class="purchase__company-text">
+                                                Собранная сумма
+                                            </p>
+                                        </div>
+
+                                        <button class="btns__add-textual purchase__company-edit">
+                                            <svg class="btns__add-textual-ico">
+                                                <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#pencil-edit-ico"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="purchase__company">
+                                    <div class="purchase__company-part">
+                                        <p class="purchase__company-name">
+                                            Торговая марка "СКИФ ПРО"
+                                        </p>
+                                        <p class="purchase__company-trading">
+                                            Площадки: ogromno.com,
+                                            zakupis-ekb.ru
+                                        </p>
+                                    </div>
+
+                                    <div class="purchase__company-part flex">
+                                        <div class="purchase__company-progress completed">
+                                            <span></span>
+                                        </div>
+
+                                        <div class="purchase__company-purse">
+                                            <p class="purchase__company-price">
+                                                12 000 ₽ / 30 000 ₽
+                                            </p>
+                                            <p class="purchase__company-text">
+                                                Собранная сумма
+                                            </p>
+                                        </div>
+
+                                        <button class="btns__add-textual purchase__company-edit">
+                                            <svg class="btns__add-textual-ico">
+                                                <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#pencil-edit-ico"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-tabname="participate">
+                                <div class="procurement__wrapper">
+                                    <div class="paginate__content" data-type-pagination="purchase"></div>
+                                    <div class="paginate__pagination procurement__pagination"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="purchase__content">
-
-                        <div class="purchase__company">
-
-                            <div class="purchase__company-part">
-                                <p class="purchase__company-name">
-                                    Торговая марка "СКИФ ПРО"
-                                </p>
-                                <p class="purchase__company-trading">
-                                    Площадки: ogromno.com, zakupis-ekb.ru
-                                </p>
-                            </div>
-
-                            <div class="purchase__company-part flex">
-
-                                <div class="purchase__company-progress">
-                                    <span></span>
-                                </div>
-
-                                <div class="purchase__company-purse">
-                                    <p class="purchase__company-price">12 000 ₽ / 30 000 ₽</p>
-                                    <p class="purchase__company-text">Собранная сумма</p>
-                                </div>
-
-                                <button class="btns__add-textual purchase__company-edit">
-                                    <svg class="btns__add-textual-ico">
-                                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#pencil-edit-ico"></use>
-                                    </svg>
-                                </button>
-
-                            </div>
-
-                        </div>
-
-                        <div class="purchase__company">
-
-                            <div class="purchase__company-part">
-                                <p class="purchase__company-name">
-                                    Торговая марка "СКИФ ПРО"
-                                </p>
-                                <p class="purchase__company-trading">
-                                    Площадки: ogromno.com, zakupis-ekb.ru
-                                </p>
-                            </div>
-
-                            <div class="purchase__company-part flex">
-
-                                <div class="purchase__company-progress completed">
-                                    <span></span>
-                                </div>
-
-                                <div class="purchase__company-purse">
-                                    <p class="purchase__company-price">12 000 ₽ / 30 000 ₽</p>
-                                    <p class="purchase__company-text">Собранная сумма</p>
-                                </div>
-
-                                <button class="btns__add-textual purchase__company-edit">
-                                    <svg class="btns__add-textual-ico">
-                                        <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#pencil-edit-ico"></use>
-                                    </svg>
-                                </button>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
+                    <div class="copyright">© 2020 SPPAY</div>
                 </div>
-
-                <div class="copyright">© 2020 SPPAY</div>
-
             </div>
+        </main>
 
-        </div>
-
-    </main>
-
-    <script src="/js/jquery.js"></script> 
+        <script src="/js/jquery.js"></script> 
 <script src="/js/jquery.nice-select.min.js"></script>
 <script src="/js/pagination.min.js"></script>
 <script src="/js/main.js"></script>
-</body>
-
+    </body>
 </html>

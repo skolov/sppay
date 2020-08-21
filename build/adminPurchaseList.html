@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, viewport-fit=cover">
+<title>Sppay</title>
+<link rel="stylesheet" href="css/style.min.css">
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    </head>
+
+    <body>
+        <main class="main">
+            <div class="mainMenu">
+    <div class="mainMenu__logo">
+        <img class="" src="/assets/images/icons/sppay-logo.svg" alt="logo">
+    </div>
+
+    <ul class="mainMenu__container">
+        <li class="mainMenu__container-item">
+            <a class="mainMenu__container-link" href="">
+                <svg class="mainMenu__container-ico">
+                    <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#menu-item-purchase"></use>
+                </svg>
+                закупки
+            </a>
+        </li>
+
+        <li class="mainMenu__container-item">
+            <a class="mainMenu__container-link" href="">
+                <svg class="mainMenu__container-ico">
+                    <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#menu-item-provider"></use>
+                </svg>
+                поставщики
+            </a>
+        </li>
+
+        <li class="mainMenu__container-item">
+            <a class="mainMenu__container-link" href="">
+                <svg class="mainMenu__container-ico">
+                    <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#menu-item-user"></use>
+                </svg>
+                Пользователи
+            </a>
+        </li>
+
+        <li class="mainMenu__container-item">
+            <a class="mainMenu__container-link active" href="">
+                <svg class="mainMenu__container-ico">
+                    <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#menu-item-purse"></use>
+                </svg>
+                финансы
+            </a>
+        </li>
+
+        <li class="mainMenu__container-item">
+            <a class="mainMenu__container-link" href="">
+                <svg class="mainMenu__container-ico">
+                    <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#menu-item-settings"></use>
+                </svg>
+                площадки
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+            <div class="screen-view">
+                <div class="topPanel">
+    <div class="topPanel__namepage">
+        Поставщики
+    </div>
+
+    <div class="topPanel__profile">
+        <div class="topPanel__profile-container user">
+            <p class="topPanel__profile-name">
+                Сидоров Игорь
+            </p>
+            <div class="topPanel__profile-avatar">
+                <img src="/assets/images/icons/default-avatar-ico.svg" class="" alt="avatar">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                <div class="content-wrapper">
+                    
+                    <div class="purchase__controllers suppliers__holder">
+                        <input class="form__input suppliers__finder" type="text" placeholder="Поиск">
+                        <svg class="suppliers__finder-ico">
+                            <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#find-ico"></use>
+                        </svg>
+                    </div>
+
+                    <div class="paginate__content" data-type-pagination="admin-purchase"></div>
+                    <div class="paginate__pagination suppliers__pagination"></div>
+
+                    
+                    <div class="copyright">© 2020 SPPAY</div>
+                </div>
+        </div></main> 
+
+        <script src="/js/jquery.js"></script> 
+<script src="/js/jquery.nice-select.min.js"></script>
+<script src="/js/pagination.min.js"></script>
+<script src="/js/main.js"></script>
+    </body>
+</html>

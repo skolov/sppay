@@ -1,4 +1,4 @@
-.modal{
+.modal {
     width: 100%;
     height: 100%;
 
@@ -6,17 +6,21 @@
     top: 0;
     left: 0;
 
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 
-    background: rgba(37,38,49,.6);
+    background: rgba(37, 38, 49, 0.6);
     mix-blend-mode: normal;
     backdrop-filter: blur(1px);
 
     z-index: 100;
 
-    &__close{
+    &.active {
+        display: flex;
+    }
+
+    &__close {
         position: absolute;
         right: 20px;
         top: 20px;
@@ -30,31 +34,46 @@
         background: none;
         border: 0;
 
-        &-ico{
+        &-ico {
             width: 20px;
             height: 20px;
             margin: 0;
         }
+
+        &-nothc {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
     }
 
-    &__window{
+    &__window {
         width: 100%;
         max-width: 552px;
 
+        display: none;
+
         position: relative;
 
-        background: #FFFFFF;
+        background: #ffffff;
         box-shadow: 0px 2px 16px rgba(153, 155, 168, 0.12);
         border-radius: 4px;
 
         overflow: hidden;
+
+        &.active {
+            display: block;
+        }
     }
 
-    &__header, &__body, &__footer{
+    &__header,
+    &__body,
+    &__footer {
         width: 100%;
     }
 
-    &__header{
+    &__header {
         height: 64px;
 
         box-sizing: border-box;
@@ -71,33 +90,33 @@
         color: #252631;
     }
 
-    &__body{
+    &__body {
         box-sizing: border-box;
         padding: 24px;
-        background: #F8FAFB;
+        background: #f8fafb;
 
-        &-symbol{
+        &-symbol {
             position: absolute;
             right: 14px;
             top: 50px;
 
-            &.disabled{
-                color: #98A9BC;
+            &.disabled {
+                color: #98a9bc;
             }
         }
 
-        &-title{
+        &-title {
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
             line-height: 19px;
 
             margin-bottom: 10px;
-            
+
             color: #252631;
         }
 
-        &-text{
+        &-text {
             font-style: normal;
             font-weight: 300;
             font-size: 14px;
@@ -105,69 +124,65 @@
 
             margin-bottom: 20px;
 
-            color: #778CA2;
+            color: #778ca2;
 
-            &.small-margin{
+            &.small-margin {
                 margin: 5px 0;
             }
 
-            &.margin-for{
+            &.margin-for {
                 margin-top: 30px;
                 margin-bottom: 0;
             }
         }
 
-        &-input{
-
+        &-input {
             padding: 14px 16px;
         }
 
-        &-textarea{
-
+        &-textarea {
             height: 300px;
-
         }
 
-        &-holder{
+        &-holder {
             width: 100%;
 
             margin-bottom: 10px;
 
-            &.floating{
+            &.floating {
                 float: left;
             }
 
-            &.flex{
+            &.flex {
                 display: flex;
                 align-items: center;
             }
 
-            &.wider-margin{
+            &.wider-margin {
                 margin: 20px 0;
             }
         }
 
-        &-holderpart{
+        &-holderpart {
             width: 50%;
 
             position: relative;
 
-            &.max-part-input-width{
+            &.max-part-input-width {
                 max-width: 240px;
             }
 
-            &:first-child{
+            &:first-child {
                 margin-right: 24px;
             }
         }
 
-        &-label{
+        &-label {
             margin: 0 0 12px 0;
         }
     }
 
-    &__footer{
-
+    &__footer {
         box-sizing: border-box;
         padding: 25px;
 
@@ -175,28 +190,28 @@
         align-items: center;
         justify-content: space-between;
 
-        &.flex-start{
+        &.flex-start {
             justify-content: flex-start;
         }
 
-        &-button{
+        &-button {
             font-size: 14px;
             padding: 15px 22px;
 
-            &.min-width-pay{
+            &.min-width-pay {
                 min-width: 238px;
             }
         }
 
-        &-text{
+        &-text {
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 150%;
 
-            color: #778CA2;
+            color: #778ca2;
 
-            &.have-margin-left{
+            &.have-margin-left {
                 margin-left: 30px;
             }
         }

@@ -1,0 +1,79 @@
+.admin {
+    &__users {
+        background: #fff;
+        padding: 12px 21px;
+        box-sizing: border-box;
+
+        & .number {
+            min-width: 50px;
+            position: absolute;
+            left: 20px;
+        }
+        & .users {
+            min-width: 260px;
+        }
+        & .phone {
+            min-width: 120px;
+            color: #98a9bc;
+        }
+        & .email {
+            min-width: 270px;
+            color: #98a9bc;
+        }
+        & .balance {
+            min-width: 70px;
+            text-align: right;
+        }
+        & .auth {
+            min-width: 120px;
+            text-align: right;
+            button {
+                width: 20px;
+                height: 20px;
+
+                background: none;
+                border: 0;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+
+        &-headtable,
+        &-tableitem {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height, or 150% */
+
+            color: #98a9bc;
+
+            padding: 25px 17px 25px 67px;
+
+            border-bottom: 2px solid #f6f9fc;
+
+            box-sizing: border-box;
+
+            position: relative;
+        }
+
+        &-tableitem {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.5;
+
+            color: #252631;
+
+            border-bottom: 1px solid #f2f4f6;
+
+            &:last-child {
+                border: 0;
+            }
+        }
+    }
+}

@@ -1,95 +1,110 @@
 <!DOCTYPE html>
 <html lang="ru">
+    <head>
+        <include src="../sections/head.html"></include>
+    </head>
 
-<head>
-    <include src="../sections/head.html"></include>
-</head>
+    <body>
+        <main class="main">
+            <div class="registration">
+                1.1 Регистрация
 
-<body>
+                <div class="registration__window">
+                    <form>
+                        <fieldset>
+                            <legend class="registration__form">
+                                Регистрация
+                            </legend>
 
-    <main class="main">
+                            <div class="form__holder">
+                                <p class="form__label">Имя</p>
+                                <input
+                                    class="form__input"
+                                    name="name"
+                                    type="text"
+                                    placeholder="Имя Фамилия"
+                                />
+                            </div>
 
-        <div class="registration">
+                            <div class="form__holder">
+                                <p class="form__label">
+                                    E-mail (для уведомлений)
+                                </p>
+                                <input
+                                    class="form__input"
+                                    name="email"
+                                    type="text"
+                                    placeholder="E-mail"
+                                />
+                            </div>
 
-            <!--
+                            <div class="form__holder">
+                                <p class="form__label">Телефон</p>
+                                <input
+                                    class="form__input"
+                                    name="phone"
+                                    type="text"
+                                    placeholder="+7 "
+                                    value="+7 "
+                                />
+                            </div>
 
-            1.1 Регистрация
-           
+                            <div class="form__holder">
+                                <button
+                                    class="btns__blue registration__form-btn"
+                                >
+                                    зарегистрироваться
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
 
-            <div class="registration__window">
-                <form>
+                    <div class="registration__social">
+                        <p class="registration__social-label">
+                            Авторизоваться через соцсети
+                        </p>
+                        <div class="registration__social-container">
+                            <button class="registration__social-btn">
+                                <svg class="registration__social-ico">
+                                    <use
+                                        xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#facebook"
+                                    ></use>
+                                </svg>
+                            </button>
 
-                    <fieldset>
+                            <button class="registration__social-btn">
+                                <svg class="registration__social-ico">
+                                    <use
+                                        xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#google"
+                                    ></use>
+                                </svg>
+                            </button>
 
-                        <legend class="registration__form">
-                            Регистрация
-                        </legend>
+                            <button class="registration__social-btn">
+                                <svg class="registration__social-ico">
+                                    <use
+                                        xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#vk"
+                                    ></use>
+                                </svg>
+                            </button>
 
-                        <div class="form__holder">
-                            <p class="form__label">Имя</p>
-                            <input class="form__input" name="name" type="text" placeholder="Имя Фамилия">
+                            <button class="registration__social-btn">
+                                <svg class="registration__social-ico">
+                                    <use
+                                        xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#ok"
+                                    ></use>
+                                </svg>
+                            </button>
                         </div>
-
-                        <div class="form__holder">
-                            <p class="form__label">E-mail (для уведомлений)</p>
-                            <input class="form__input" name="email" type="text" placeholder="E-mail">
-                        </div>
-
-                        <div class="form__holder">
-                            <p class="form__label">Телефон</p>
-                            <input class="form__input" name="phone" type="text" placeholder="+7 " value="+7 ">
-                        </div>
-
-                        <div class="form__holder">
-                            <button class="btns__blue registration__form-btn">зарегистрироваться</button>
-                        </div>
-
-                    </fieldset>
-
-                </form>
-
-                <div class="registration__social">
-                    <p class="registration__social-label">Авторизоваться через соцсети</p>
-                    <div class="registration__social-container">
-
-                        <button class="registration__social-btn">
-                            <svg class="registration__social-ico">
-                                <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#facebook"></use>
-                            </svg>
-                        </button>
-
-                        <button class="registration__social-btn">
-                            <svg class="registration__social-ico">
-                                <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#google"></use>
-                            </svg>
-                        </button>
-
-                        <button class="registration__social-btn">
-                            <svg class="registration__social-ico">
-                                <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#vk"></use>
-                            </svg>
-                        </button>
-
-                        <button class="registration__social-btn">
-                            <svg class="registration__social-ico">
-                                <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#ok"></use>
-                            </svg>
-                        </button>
-
+                        <p class="registration__social-label">
+                            Вы уже зарегистрированы?<a href="#"
+                                >Авторизоваться</a
+                            >
+                        </p>
                     </div>
-                    <p class="registration__social-label">Вы уже зарегистрированы?<a href="">Авторизоваться</a></p>
                 </div>
-            </div>
 
-
-             -->
-
-
-
-
-
-
-            <!--
+                <!--
 
             1.2 Подтверждение телефона, повторный код
 
@@ -123,12 +138,7 @@
 
             -->
 
-
-
-
-
-
-            <!--
+                <!--
 
             1.3 Задать пароль
 
@@ -159,10 +169,7 @@
 
             -->
 
-
-
-
-            <!--
+                <!--
 
             1.4 Авторизация
 
@@ -228,9 +235,7 @@
 
             -->
 
-
-
-            <!--
+                <!--
 
             1.5 Восстановление пароля
 
@@ -253,19 +258,24 @@
                 </form>
             </div>
 
-            -->
+            --></div>
 
-        </div>
+            <div class="registration__background">
+                <img
+                    src="/assets/images/background-image-a.svg"
+                    class="registration__background-a"
+                />
+                <img
+                    src="/assets/images/background-image-b.svg"
+                    class="registration__background-b"
+                />
+                <img
+                    src="/assets/images/background-image-c.svg"
+                    class="registration__background-c"
+                />
+            </div>
+        </main>
 
-        <div class="registration__background">
-            <img src="/assets/images/background-image-a.svg" class="registration__background-a">
-            <img src="/assets/images/background-image-b.svg" class="registration__background-b">
-            <img src="/assets/images/background-image-c.svg" class="registration__background-c">
-        </div>
-
-    </main>
-
-    <include src="../sections/scripts.html"></include>
-</body>
-
+        <include src="../sections/scripts.html"></include>
+    </body>
 </html>

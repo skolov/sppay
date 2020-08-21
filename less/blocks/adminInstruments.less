@@ -1,0 +1,41 @@
+.adminInstruments {
+    padding: 25px 21px;
+    background: #fff;
+    box-sizing: border-box;
+
+    &__tablehead,
+    &__tableitem {
+        padding: 10px 0;
+        border-bottom: 2px solid #f6f9fc;
+        box-sizing: border-box;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height, or 150% */
+
+        color: #98a9bc;
+
+        & .date {
+            min-width: 200px;
+            flex-grow: 1.5;
+        }
+        & .operation {
+            min-width: 320px;
+            flex-grow: 2;
+        }
+        & .object {
+            min-width: 400px;
+            flex-grow: 3;
+        }
+        & .summ {
+            min-width: 120px;
+            flex-grow: 1;
+        }
+    }
+}

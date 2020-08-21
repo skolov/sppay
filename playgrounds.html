@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <include src="../sections/head.html"></include>
+    </head>
+
+    <body>
+        <main class="main">
+            <include src="../sections/adminMainMenu.html"></include>
+
+            <div class="screen-view">
+                <include src="../sections/adminTopPanel.html"></include>
+
+                <div class="content-wrapper">
+
+                    <div class="playgrounds">
+                         <div class="playgrounds__tablehead">
+                             <p class="name">Название площадки</p>
+                             <p class="address">Адрес площадки</p>
+                             <p class="commission">Комиссия</p>
+                             <p class="buttons">
+
+                             </p>
+                         </div>
+                         <div>
+                             <div class="playgrounds__tableitem">
+                                <p class="name bold">ogromno.ru</p>
+                                <p class="address">https://ogromno.ru/ </p>
+                                <p class="commission bold">4%</p>
+                                <p class="buttons">
+                                    <button class="playgrounds__table-button">
+                                        <svg class="playgrounds__table-btn-ico">
+                                            <use
+                                                xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#pencil-edit-ico"
+                                            ></use>
+                                        </svg>
+                                    </button>
+                                    <button class="playgrounds__table-button">
+                                        <svg class="playgrounds__table-btn-ico">
+                                            <use
+                                                xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#trash-ico"
+                                            ></use>
+                                        </svg>
+                                    </button>
+                                </p>
+                             </div>
+                         </div>
+                    </div>
+
+                    <div class="playgrounds__wrap-addbtn">
+                        <button class="btns__add-textual purchase__tabs-create">
+                            <svg class="btns__add-textual-ico">
+                                <use xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#blue-plus-ico"></use>
+                            </svg>
+                            Добавить площадку
+                        </button>
+                    </div>
+
+                    <div class="copyright">© 2020 SPPAY</div>
+                </div>
+        </main>
+
+        <include src="../sections/scripts.html"></include>
+    </body>
+</html>

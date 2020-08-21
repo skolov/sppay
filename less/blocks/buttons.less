@@ -1,51 +1,50 @@
-.btns{
-
-    &__blue, &__green, &__gray, &__add-textual, &__orange{
-
+.btns {
+    &__blue,
+    &__green,
+    &__gray,
+    &__add-textual,
+    &__orange {
         outline: none;
         border: 0;
         cursor: pointer;
 
-        &:focus{
+        &:focus {
             outline: none;
         }
     }
 
-    &__blue, &__green{
+    &__blue,
+    &__green {
         border-radius: 4px;
     }
-    
-    &__gray{
-        background: #F2F4F6;
+
+    &__gray {
+        background: #f2f4f6;
         border-radius: 4px;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
 
-
-        &.blue-text{
-
+        &.blue-text {
             text-align: center;
             text-transform: uppercase;
 
-            color: #4285F4;
+            color: #4285f4;
         }
 
-        &.upper-text{
+        &.upper-text {
             text-transform: uppercase;
         }
 
-        &.gray-text{
-            color: #778CA2;
+        &.gray-text {
+            color: #778ca2;
         }
-
-
     }
 
-    &__green{
-        color: #FFFFFF;
-        background: #6DD230;
+    &__green {
+        color: #ffffff;
+        background: #6dd230;
 
         font-style: normal;
         font-weight: 500;
@@ -56,10 +55,9 @@
         text-transform: uppercase;
     }
 
-    &__blue{
-
+    &__blue {
         color: #fff;
-        background: #4D7CFE;
+        background: #4d7cfe;
 
         font-style: normal;
         font-family: inherit;
@@ -67,12 +65,10 @@
         font-size: 12px;
         line-height: 14px;
         text-transform: uppercase;
-
     }
 
-    &__add-textual{
+    &__add-textual {
         background: none;
-        color: #4D7CFE;
 
         height: 20px;
 
@@ -89,20 +85,30 @@
 
         text-transform: uppercase;
 
-        color: #4D7CFE;
+        color: #4d7cfe;
 
-        &.normal-text{
+        &.red {
+            color: #fe4d97;
+        }
+
+        &.normal-text {
             text-transform: none;
         }
 
-        &-ico{
+        &-ico {
             width: 18px;
             height: 18px;
+            &.red {
+                fill: #fe4d97;
+            }
+
+            &.blue {
+                fill: #4d7cfe;
+            }
         }
     }
 
-    &__orange{
-
+    &__orange {
         display: flex;
         align-items: center;
 
@@ -114,8 +120,11 @@
         text-align: center;
         text-transform: uppercase;
 
-        color: #FFFFFF;
+        color: #ffffff;
 
-        background: #FFAB2B;
+        background: #ffab2b;
+        &.bordered {
+            border-radius: 4px;
+        }
     }
 }

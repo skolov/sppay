@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <include src="../sections/head.html"></include>
+    </head>
+
+    <body>
+        <main class="main">
+            <include src="../sections/adminMainMenu.html"></include>
+
+            <div class="screen-view">
+                <include src="../sections/adminTopPanel.html"></include>
+
+                <div class="content-wrapper">
+                    <div class="profile__information">
+                        <div class="profile__information-tabs">
+                            <div
+                                class="profile__information-onetab active"
+                                data-tab-switch="main"
+                                data-tab-parent
+                            >
+                                <svg class="profile__information-tabico">
+                                    <use
+                                        xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#supplier-profile-tab-ico"
+                                    ></use>
+                                </svg>
+                                <div class="profile__information-text">
+                                    <p class="profile__information-paragraph">
+                                        Основная информация
+                                    </p>
+                                    <p
+                                        class="profile__information-paragraph gray"
+                                    >
+                                        Название, описание
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="profile__information-onetab"
+                                data-tab-switch="settings"
+                                data-tab-parent
+                            >
+                                <svg class="profile__information-tabico">
+                                    <use
+                                        xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#settings-profile-tab-ico"
+                                    ></use>
+                                </svg>
+                                <div class="profile__information-text">
+                                    <p class="profile__information-paragraph">
+                                        Контрагенты
+                                    </p>
+                                    <p
+                                        class="profile__information-paragraph gray"
+                                    >
+                                        Управление контрагентами
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="profile__information-view"
+                            data-tabname="main"
+                        >
+                            <h1 class="profile__information-title">
+                                Основная информация
+                            </h1>
+
+                            <div class="profile__holder">
+                                <div class="form__holder flex">
+                                    <div
+                                        class="form__holder-part adminSuppliers__inputHolder"
+                                    >
+                                        <p
+                                            class="form__label profile__information-label"
+                                        >
+                                            Название поставщика
+                                        </p>
+                                        <input
+                                            class="form__input profile__information-input"
+                                            type="text"
+                                            value="Торговая марка 'СКИФ ПРО'"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="form__holder flex">
+                                    <div
+                                        class="form__holder-part adminSuppliers__inputHolder"
+                                    >
+                                        <p class="form__label">
+                                            Краткое описание
+                                        </p>
+                                        <textarea
+                                            placeholder="Чем занимается компания?"
+                                            class="form__input adminSuppliers__textarea"
+                                            type="text"
+                                        ></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form__holder flex">
+                                    <div
+                                        class="form__holder-part profile__information-unit adminSuppliers__no-margin"
+                                    >
+                                        <p class="form__label">
+                                            Минимальная сумма закупки
+                                        </p>
+                                        <div class="money__input-holder">
+                                            <input
+                                                class="form__input"
+                                                type="text"
+                                                value="40 000"
+                                            />
+                                            <span class="symbol__ruble"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form__holder flex">
+                                    <div
+                                        class="form__holder-part profile__information-unit"
+                                    >
+                                        <p class="form__label">
+                                            Сайты (один или несколько)
+                                        </p>
+                                        <div class="money__input-holder">
+                                            <input
+                                                class="form__input"
+                                                type="text"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form__holder flex">
+                                    <div
+                                        class="form__holder-part profile__information-unit"
+                                    >
+                                        <p class="form__label">
+                                            Город
+                                        </p>
+                                        <input
+                                            class="form__input"
+                                            type="text"
+                                        />
+                                    </div>
+                                    <div
+                                        class="form__holder-part profile__information-unit"
+                                    >
+                                        <p class="form__label">
+                                            Адрес
+                                        </p>
+                                        <input
+                                            class="form__input"
+                                            type="text"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="form__holder flex">
+                                    <div
+                                        class="form__holder-part profile__information-unit"
+                                    >
+                                        <p class="form__label">
+                                            ИНН
+                                        </p>
+                                        <input
+                                            class="form__input"
+                                            type="text"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button
+                                class="btns__blue profile__information-savebtn"
+                            >
+                                Сохранить
+                            </button>
+                        </div>
+
+                        <div
+                            class="profile__information-view"
+                            data-tabname="settings"
+                        >
+                            <h1 class="profile__information-title">
+                                Контрагенты
+                            </h1>
+
+                            <div class="adminSuppliers__counterparty-holder">
+                                <div class="form__holder flex">
+                                    <div
+                                        class="form__holder-part adminSuppliers__inputHolder"
+                                    >
+                                        <p
+                                            class="form__label profile__information-label"
+                                        >
+                                            Название контрагента
+                                        </p>
+                                        <input
+                                            class="form__input profile__information-input"
+                                            type="text"
+                                            value="Торговая марка 'СКИФ ПРО'"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="form__holder flex adminSuppliers__flex-holder"
+                                >
+                                    <div class="form__holder-part inn">
+                                        <p
+                                            class="form__label profile__information-label"
+                                        >
+                                            ИНН
+                                        </p>
+                                        <input
+                                            class="form__input profile__information-input"
+                                            type="text"
+                                            value="344556677"
+                                        />
+                                    </div>
+                                    <div class="form__holder-part kpp">
+                                        <p
+                                            class="form__label profile__information-label"
+                                        >
+                                            КПП
+                                        </p>
+                                        <input
+                                            class="form__input profile__information-input"
+                                            type="text"
+                                            value="344556677"
+                                        />
+                                    </div>
+                                    <div class="form__holder-part bik">
+                                        <p
+                                            class="form__label profile__information-label"
+                                        >
+                                            БИК
+                                        </p>
+                                        <input
+                                            class="form__input profile__information-input"
+                                            type="text"
+                                            value="454647489"
+                                        />
+                                    </div>
+                                    <div
+                                        class="form__holder-part checkingAccount"
+                                    >
+                                        <p
+                                            class="form__label profile__information-label"
+                                        >
+                                            Расчетный счет
+                                        </p>
+                                        <input
+                                            class="form__input profile__information-input"
+                                            type="text"
+                                            value="5647484940948474635323456"
+                                        />
+                                    </div>
+                                </div>
+
+                                <button
+                                    class="btns__add-textual red adminSuppliers__add-button"
+                                >
+                                    <svg class="btns__add-textual-ico red">
+                                        <use
+                                            xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#trash-ico"
+                                        ></use>
+                                    </svg>
+                                    удалить контрагента
+                                </button>
+                            </div>
+
+                            <div class="adminSuppliers__counterparty-holder">
+                                <div class="form__holder flex">
+                                    <div
+                                        class="form__holder-part adminSuppliers__inputHolder"
+                                    >
+                                        <p
+                                            class="form__label profile__information-label"
+                                        >
+                                            Название контрагента
+                                        </p>
+                                        <input
+                                            class="form__input profile__information-input"
+                                            type="text"
+                                            value="Торговая марка 'СКИФ ПРО'"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="form__holder flex adminSuppliers__flex-holder"
+                                >
+                                    <div class="form__holder-part inn">
+                                        <p
+                                            class="form__label profile__information-label"
+                                        >
+                                            ИНН
+                                        </p>
+                                        <input
+                                            class="form__input profile__information-input"
+                                            type="text"
+                                            value="344556677"
+                                        />
+                                    </div>
+                                    <div class="form__holder-part kpp">
+                                        <p
+                                            class="form__label profile__information-label"
+                                        >
+                                            КПП
+                                        </p>
+                                        <input
+                                            class="form__input profile__information-input"
+                                            type="text"
+                                            value="344556677"
+                                        />
+                                    </div>
+                                    <div class="form__holder-part bik">
+                                        <p
+                                            class="form__label profile__information-label"
+                                        >
+                                            БИК
+                                        </p>
+                                        <input
+                                            class="form__input profile__information-input"
+                                            type="text"
+                                            value="454647489"
+                                        />
+                                    </div>
+                                    <div
+                                        class="form__holder-part checkingAccount"
+                                    >
+                                        <p
+                                            class="form__label profile__information-label"
+                                        >
+                                            Расчетный счет
+                                        </p>
+                                        <input
+                                            class="form__input profile__information-input"
+                                            type="text"
+                                            value="5647484940948474635323456"
+                                        />
+                                    </div>
+                                </div>
+
+                                <button
+                                    class="btns__add-textual red adminSuppliers__add-button"
+                                >
+                                    <svg class="btns__add-textual-ico red">
+                                        <use
+                                            xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#trash-ico"
+                                        ></use>
+                                    </svg>
+                                    удалить контрагента
+                                </button>
+                            </div>
+
+                            <button
+                                class="btns__add-textual adminSuppliers__add-button"
+                            >
+                                <svg class="btns__add-textual-ico blue">
+                                    <use
+                                        xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#blue-plus-ico"
+                                    ></use>
+                                </svg>
+                                добавить контрагента
+                            </button>
+
+                            <button
+                                class="btns__blue profile__information-savebtn"
+                            >
+                                Сохранить
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="copyright">© 2020 SPPAY</div>
+                </div>
+            </div>
+        </main>
+
+        <include src="../sections/scripts.html"></include>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <include src="../sections/head.html"></include>
+    </head>
+
+    <body>
+        <main class="main">
+            <include src="../sections/adminMainMenu.html"></include>
+
+            <div class="screen-view">
+                <include src="../sections/adminTopPanel.html"></include>
+
+                <div class="content-wrapper">
+                    
+                    <div class="purchase__controllers suppliers__holder">
+                        <input
+                            class="form__input suppliers__finder"
+                            type="text"
+                            placeholder="Поиск"
+                        />
+                        <svg class="suppliers__finder-ico">
+                            <use
+                                xlink:href="/assets/images/sprite-icons/sprite/sprite-icons.svg#find-ico"
+                            ></use>
+                        </svg>
+                    </div>
+
+                    <div class="paginate__content" data-type-pagination="admin-purchase"></div>
+                    <div class="paginate__pagination suppliers__pagination"></div>
+
+                    
+                    <div class="copyright">© 2020 SPPAY</div>
+                </div>
+        </main> 
+
+        <include src="../sections/scripts.html"></include>
+    </body>
+</html>
