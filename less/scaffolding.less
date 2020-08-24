@@ -112,3 +112,59 @@ a {
         color: #98a9bc;
     }
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+
+        text-align: center;
+        letter-spacing: 0.21px;
+
+        margin: 0 5px;
+        cursor: pointer;
+
+        &:first-child,
+        &:last-child {
+            color: #778ca2;
+            a {
+                color: #778ca2;
+            }
+        }
+
+        &:last-child {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+
+        span {
+            display: block;
+        }
+        &.active {
+            background: #4d7cfe;
+            a {
+                color: #ffffff;
+            }
+        }
+        a {
+            display: block;
+            min-width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000;
+        }
+    }
+}
